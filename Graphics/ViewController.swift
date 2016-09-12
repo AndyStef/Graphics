@@ -20,14 +20,38 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let triangle = drawTriangle(x: 20, y: 10, sideLenght: 100)
-        view.addSubview(triangle)
+        let firstQuarterTriangle = drawTriangle(x: 20, y: 20, sideLenght: 100)
+        view.addSubview(firstQuarterTriangle)
+
+        let secondQuarterTriangle = drawTriangle(x: -75, y: 20, sideLenght: 40)
+        view.addSubview(secondQuarterTriangle)
+
+        let thirdQuarterTriangle = drawTriangle(x: -50, y: -125, sideLenght: 80)
+        view.addSubview(thirdQuarterTriangle)
+
+        let fourthQuarterTriangle = drawTriangle(x: 80, y: -75, sideLenght: 50)
+        view.addSubview(fourthQuarterTriangle)
     }
 
     //MARK: - Drawing methods
     func drawTriangle(x x: CGFloat, y: CGFloat, sideLenght: CGFloat) -> TriangleView {
         let height = (sideLenght * sqrt(3.0)) / 2.0
-        let triangle = TriangleView(frame: CGRect(x: view.center.x + x + 1, y: view.center.y - height - y - 1, width: sideLenght, height: height))
+        var triangle = TriangleView()
+
+        switch (x, y) {
+        case (0, 0):
+            triangle = TriangleView(frame: CGRect(x: view.center.x, y: view.center.y - height, width: sideLenght, height: height))
+        case (x, y) where x >= 0 && y >= 0:
+            triangle = TriangleView(frame: CGRect(x: view.center.x + x + 1, y: view.center.y - height - y - 1, width: sideLenght, height: height))
+        case (x, y) where x <= 0 && y >= 0:
+            triangle = TriangleView(frame: CGRect(x: view.center.x + x - 2, y: view.center.y - height - y - 2, width: sideLenght, height: height))
+        case (x, y) where x <= 0 && y <= 0:
+            triangle = TriangleView(frame: CGRect(x: view.center.x + x - 2, y: view.center.y - height - y + 2, width: sideLenght, height: height))
+        case (x, y) where x >= 0 && y <= 0:
+            triangle = TriangleView(frame: CGRect(x: view.center.x + x + 1, y: view.center.y - height - y + 2, width: sideLenght, height: height))
+        default:
+            triangle = TriangleView()
+        }
         return triangle
     }
 }
