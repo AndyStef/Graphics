@@ -27,6 +27,5 @@ class TriangleView: UIView {
         CGContextClosePath(ctx)
         CGContextSetRGBFillColor(ctx, 1, 0.5, 0, 0.6)
         CGContextFillPath(ctx)
-
     }
 }

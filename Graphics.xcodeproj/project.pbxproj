@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F815ED31D84B2930087D256 /* Bezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F815ED21D84B2930087D256 /* Bezier.swift */; };
 		8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1944D1D803249002AACE6 /* AppDelegate.swift */; };
 		8FC194501D803249002AACE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1944F1D803249002AACE6 /* ViewController.swift */; };
 		8FC194531D803249002AACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC194511D803249002AACE6 /* Main.storyboard */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8F815ED21D84B2930087D256 /* Bezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bezier.swift; sourceTree = "<group>"; };
 		8FC1944A1D803249002AACE6 /* Graphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC1944D1D803249002AACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC1944F1D803249002AACE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 			children = (
 				8FC1944D1D803249002AACE6 /* AppDelegate.swift */,
 				8FC1944F1D803249002AACE6 /* ViewController.swift */,
-				8F815ED21D84B2930087D256 /* Bezier.swift */,
 				8FC1947B1D803701002AACE6 /* TriangleView.swift */,
 				8FC194511D803249002AACE6 /* Main.storyboard */,
 				8FC194541D803249002AACE6 /* Assets.xcassets */,
@@ -262,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F815ED31D84B2930087D256 /* Bezier.swift in Sources */,
 				8FC194501D803249002AACE6 /* ViewController.swift in Sources */,
 				8FC1947C1D803701002AACE6 /* TriangleView.swift in Sources */,
 				8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */,
