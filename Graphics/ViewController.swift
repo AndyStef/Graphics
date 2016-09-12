@@ -8,8 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
+    //MARK: - Outlets
+    @IBOutlet private weak var firstQuarterView: UIView?
+    @IBOutlet private weak var secondQuarterView: UIView?
+    @IBOutlet private weak var thirdQuarterView: UIView?
+    @IBOutlet private weak var fourthQuarterView: UIView?
+
+    //MARK: - ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
