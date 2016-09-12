@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AdditionViewControllerDelegate: class {
+    func createTriangle(x: Double, y: Double, sideLenght: CGFloat)
+}
+
 class MainViewController: UIViewController {
 
     //MARK: - Outlets
@@ -59,11 +63,20 @@ class MainViewController: UIViewController {
 //MARK: - Actions
 extension MainViewController {
     @IBAction func addButtonPressed(sender: AnyObject) {
-        guard let additionViewController = storyboard?.instantiateViewControllerWithIdentifier(AdditionViewController.storyboardId) else {
+        guard let additionViewController = storyboard?.instantiateViewControllerWithIdentifier(AdditionViewController.storyboardId) as? AdditionViewController else {
 
             return
         }
-        
+
+        additionViewController.delegate = self
         navigationController?.pushViewController(additionViewController, animated: true)
+    }
+}
+
+//MARK: - AdditionViewControllerDelegate
+extension MainViewController: AdditionViewControllerDelegate {
+    func createTriangle(x: Double, y: Double, sideLenght: CGFloat) {
+        let triangle = drawTriangle(x: CGFloat(x), y: CGFloat(y), sideLenght: sideLenght)
+        view.addSubview(triangle)
     }
 }
