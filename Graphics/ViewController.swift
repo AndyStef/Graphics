@@ -55,3 +55,15 @@ class MainViewController: UIViewController {
         return triangle
     }
 }
+
+//MARK: - Actions
+extension MainViewController {
+    @IBAction func addButtonPressed(sender: AnyObject) {
+        guard let additionViewController = storyboard?.instantiateViewControllerWithIdentifier(AdditionViewController.storyboardId) else {
+
+            return
+        }
+        
+        navigationController?.pushViewController(additionViewController, animated: true)
+    }
+}
