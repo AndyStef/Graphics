@@ -2505,6 +2505,11 @@
                             <outlet property="delegate" destination="2tb-ND-BXY" id="wK9-u0-W0T"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="triangleLenghtTexyField" destination="rkA-DS-vDL" id="7Ax-h1-MEZ"/>
+                        <outlet property="xPositionTextField" destination="b05-iN-fbp" id="CCY-mA-ssu"/>
+                        <outlet property="yPositionTextField" destination="rSf-hL-iy4" id="j6O-GJ-x8L"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hH-ii-m4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F815ED51D872F270087D256 /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F815ED41D872F270087D256 /* AdditionViewController.swift */; };
+		8F815EDD1D873D5F0087D256 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F815EDC1D873D5F0087D256 /* UIAlertView+Blocks.m */; };
 		8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1944D1D803249002AACE6 /* AppDelegate.swift */; };
 		8FC194501D803249002AACE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1944F1D803249002AACE6 /* ViewController.swift */; };
 		8FC194531D803249002AACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC194511D803249002AACE6 /* Main.storyboard */; };
@@ -37,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		8F815ED41D872F270087D256 /* AdditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionViewController.swift; sourceTree = "<group>"; };
+		8F815EDA1D873D5E0087D256 /* Graphics-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Graphics-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F815EDB1D873D5F0087D256 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		8F815EDC1D873D5F0087D256 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		8FC1944A1D803249002AACE6 /* Graphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC1944D1D803249002AACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC1944F1D803249002AACE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F815ED61D873CD10087D256 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F815ED41D872F270087D256 /* AdditionViewController.swift */,
+				8FC1944F1D803249002AACE6 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8F815ED71D873CEF0087D256 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FC1947B1D803701002AACE6 /* TriangleView.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8F815ED81D873CFD0087D256 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8F815ED91D873D050087D256 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8F815EDB1D873D5F0087D256 /* UIAlertView+Blocks.h */,
+				8F815EDC1D873D5F0087D256 /* UIAlertView+Blocks.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		8FC194411D803249002AACE6 = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +138,13 @@
 		8FC1944C1D803249002AACE6 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				8FC1944D1D803249002AACE6 /* AppDelegate.swift */,
-				8FC1944F1D803249002AACE6 /* ViewController.swift */,
-				8F815ED41D872F270087D256 /* AdditionViewController.swift */,
-				8FC1947B1D803701002AACE6 /* TriangleView.swift */,
+				8F815ED91D873D050087D256 /* Categories */,
+				8F815ED81D873CFD0087D256 /* View */,
+				8F815ED71D873CEF0087D256 /* Model */,
+				8F815ED61D873CD10087D256 /* Controller */,
 				8FC194511D803249002AACE6 /* Main.storyboard */,
+				8FC1944D1D803249002AACE6 /* AppDelegate.swift */,
+				8F815EDA1D873D5E0087D256 /* Graphics-Bridging-Header.h */,
 				8FC194541D803249002AACE6 /* Assets.xcassets */,
 				8FC194561D803249002AACE6 /* LaunchScreen.storyboard */,
 				8FC194591D80324A002AACE6 /* Info.plist */,
@@ -264,6 +303,7 @@
 			files = (
 				8FC194501D803249002AACE6 /* ViewController.swift in Sources */,
 				8FC1947C1D803701002AACE6 /* TriangleView.swift in Sources */,
+				8F815EDD1D873D5F0087D256 /* UIAlertView+Blocks.m in Sources */,
 				8F815ED51D872F270087D256 /* AdditionViewController.swift in Sources */,
 				8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */,
 			);
@@ -409,10 +449,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Graphics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.Graphics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Graphics/Graphics-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -420,10 +463,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Graphics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.Graphics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Graphics/Graphics-Bridging-Header.h";
 			};
 			name = Release;
 		};
