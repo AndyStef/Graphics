@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F815ED31D84B2930087D256 /* Bezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F815ED21D84B2930087D256 /* Bezier.swift */; };
 		8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1944D1D803249002AACE6 /* AppDelegate.swift */; };
 		8FC194501D803249002AACE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1944F1D803249002AACE6 /* ViewController.swift */; };
 		8FC194531D803249002AACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC194511D803249002AACE6 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		8FC194581D803249002AACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC194561D803249002AACE6 /* LaunchScreen.storyboard */; };
 		8FC194631D80324A002AACE6 /* GraphicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC194621D80324A002AACE6 /* GraphicsTests.swift */; };
 		8FC1946E1D80324A002AACE6 /* GraphicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1946D1D80324A002AACE6 /* GraphicsUITests.swift */; };
+		8FC1947C1D803701002AACE6 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1947B1D803701002AACE6 /* TriangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F815ED21D84B2930087D256 /* Bezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bezier.swift; sourceTree = "<group>"; };
 		8FC1944A1D803249002AACE6 /* Graphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC1944D1D803249002AACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC1944F1D803249002AACE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		8FC194691D80324A002AACE6 /* GraphicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC1946D1D80324A002AACE6 /* GraphicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsUITests.swift; sourceTree = "<group>"; };
 		8FC1946F1D80324A002AACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC1947B1D803701002AACE6 /* TriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				8FC1944D1D803249002AACE6 /* AppDelegate.swift */,
 				8FC1944F1D803249002AACE6 /* ViewController.swift */,
+				8F815ED21D84B2930087D256 /* Bezier.swift */,
+				8FC1947B1D803701002AACE6 /* TriangleView.swift */,
 				8FC194511D803249002AACE6 /* Main.storyboard */,
 				8FC194541D803249002AACE6 /* Assets.xcassets */,
 				8FC194561D803249002AACE6 /* LaunchScreen.storyboard */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F815ED31D84B2930087D256 /* Bezier.swift in Sources */,
 				8FC194501D803249002AACE6 /* ViewController.swift in Sources */,
+				8FC1947C1D803701002AACE6 /* TriangleView.swift in Sources */,
 				8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				8FC194741D80324A002AACE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FC194751D80324A002AACE6 /* Build configuration list for PBXNativeTarget "GraphicsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				8FC194771D80324A002AACE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FC194781D80324A002AACE6 /* Build configuration list for PBXNativeTarget "GraphicsUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				8FC1947A1D80324A002AACE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
