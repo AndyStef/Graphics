@@ -23,6 +23,10 @@ class AdditionViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        decorateUI()
+    }
+
+    func decorateUI() {
         navigationItem.title = "Новий трикутник"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Створити", style: .Done, target: self, action: #selector(AdditionViewController.createButtonPressed))
     }

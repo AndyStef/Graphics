@@ -10,9 +10,11 @@ import Foundation
 import UIKit
 
 class TriangleView: UIView {
+    static var fillColor: UIColor = UIColor.greenColor()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
         self.backgroundColor = UIColor.clearColor()
     }
 
@@ -27,7 +29,7 @@ class TriangleView: UIView {
         CGContextAddLineToPoint(ctx, CGRectGetMidX(rect), CGRectGetMinY(rect))
         CGContextAddLineToPoint(ctx, (CGRectGetMaxX(rect)), CGRectGetMaxY(rect))
         CGContextClosePath(ctx)
-        CGContextSetRGBFillColor(ctx, 1, 0.5, 0, 0.6)
+        CGContextSetFillColorWithColor(ctx, TriangleView.fillColor.CGColor)
         CGContextFillPath(ctx)
     }
 }
