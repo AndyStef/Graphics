@@ -23,18 +23,6 @@ class MainViewController: UIViewController {
     //MARK: - ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let firstQuarterTriangle = drawTriangle(x: 20, y: 20, sideLenght: 100)
-        view.addSubview(firstQuarterTriangle)
-
-        let secondQuarterTriangle = drawTriangle(x: -75, y: 20, sideLenght: 40)
-        view.addSubview(secondQuarterTriangle)
-
-        let thirdQuarterTriangle = drawTriangle(x: -50, y: -125, sideLenght: 80)
-        view.addSubview(thirdQuarterTriangle)
-
-        let fourthQuarterTriangle = drawTriangle(x: 80, y: -75, sideLenght: 50)
-        view.addSubview(fourthQuarterTriangle)
     }
 
     //MARK: - Drawing methods
@@ -46,13 +34,13 @@ class MainViewController: UIViewController {
         case (0, 0):
             triangle = TriangleView(frame: CGRect(x: view.center.x, y: view.center.y - height, width: sideLenght, height: height))
         case (x, y) where x >= 0 && y >= 0:
-            triangle = TriangleView(frame: CGRect(x: view.center.x + x + 1, y: view.center.y - height - y - 1, width: sideLenght, height: height))
+            triangle = TriangleView(frame: CGRect(x: view.center.x + x + (x/10), y: view.center.y - height - y - (y/10), width: sideLenght, height: height))
         case (x, y) where x <= 0 && y >= 0:
-            triangle = TriangleView(frame: CGRect(x: view.center.x + x - 2, y: view.center.y - height - y - 2, width: sideLenght, height: height))
+            triangle = TriangleView(frame: CGRect(x: view.center.x + x + (x/10) - 1, y: view.center.y - height - y - (y/10), width: sideLenght, height: height))
         case (x, y) where x <= 0 && y <= 0:
-            triangle = TriangleView(frame: CGRect(x: view.center.x + x - 2, y: view.center.y - height - y + 2, width: sideLenght, height: height))
+            triangle = TriangleView(frame: CGRect(x: view.center.x + x + (x/10) - 1, y: view.center.y - height - y - (y/10), width: sideLenght, height: height))
         case (x, y) where x >= 0 && y <= 0:
-            triangle = TriangleView(frame: CGRect(x: view.center.x + x + 1, y: view.center.y - height - y + 2, width: sideLenght, height: height))
+            triangle = TriangleView(frame: CGRect(x: view.center.x + x + (x/10), y: view.center.y - height - y - (y/10), width: sideLenght, height: height))
         default:
             triangle = TriangleView()
         }
@@ -60,7 +48,7 @@ class MainViewController: UIViewController {
     }
 }
 
-//MARK: - Actions
+//MARK: - Actions and selectors
 extension MainViewController {
     @IBAction func addButtonPressed(sender: AnyObject) {
         guard let additionViewController = storyboard?.instantiateViewControllerWithIdentifier(AdditionViewController.storyboardId) as? AdditionViewController else {
@@ -71,12 +59,18 @@ extension MainViewController {
         additionViewController.delegate = self
         navigationController?.pushViewController(additionViewController, animated: true)
     }
+
+    @objc func handleTriangleTap() {
+        print("tapped triangle")
+    }
 }
 
 //MARK: - AdditionViewControllerDelegate
 extension MainViewController: AdditionViewControllerDelegate {
     func createTriangle(x: Double, y: Double, sideLenght: CGFloat) {
-        let triangle = drawTriangle(x: CGFloat(x), y: CGFloat(y), sideLenght: sideLenght)
+        let triangle = drawTriangle(x: CGFloat(x) * 10, y: CGFloat(y) * 10, sideLenght: sideLenght * 10)
         view.addSubview(triangle)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainViewController.handleTriangleTap))
+        triangle.addGestureRecognizer(tapGesture)
     }
 }
