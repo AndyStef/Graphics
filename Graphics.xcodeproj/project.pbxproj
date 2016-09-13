@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F7FE38BF261AA98C0706721 /* Pods_Graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A534634817C6CBD41A972C /* Pods_Graphics.framework */; };
 		8F815ED51D872F270087D256 /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F815ED41D872F270087D256 /* AdditionViewController.swift */; };
 		8F815EDD1D873D5F0087D256 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F815EDC1D873D5F0087D256 /* UIAlertView+Blocks.m */; };
 		8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1944D1D803249002AACE6 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 		8FC194631D80324A002AACE6 /* GraphicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC194621D80324A002AACE6 /* GraphicsTests.swift */; };
 		8FC1946E1D80324A002AACE6 /* GraphicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1946D1D80324A002AACE6 /* GraphicsUITests.swift */; };
 		8FC1947C1D803701002AACE6 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1947B1D803701002AACE6 /* TriangleView.swift */; };
+		8FCF1F711D881BC200DE579A /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1F701D881BC200DE579A /* UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08A534634817C6CBD41A972C /* Pods_Graphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Graphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F815ED41D872F270087D256 /* AdditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionViewController.swift; sourceTree = "<group>"; };
 		8F815EDA1D873D5E0087D256 /* Graphics-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Graphics-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F815EDB1D873D5F0087D256 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		8FC1946D1D80324A002AACE6 /* GraphicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsUITests.swift; sourceTree = "<group>"; };
 		8FC1946F1D80324A002AACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC1947B1D803701002AACE6 /* TriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		8FCF1F701D881BC200DE579A /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		923EB28D086E988816EEC35F /* Pods-Graphics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graphics/Pods-Graphics.debug.xcconfig"; sourceTree = "<group>"; };
+		E5848C9ECDB5B02117D7C695 /* Pods-Graphics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphics.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graphics/Pods-Graphics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7FE38BF261AA98C0706721 /* Pods_Graphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		787F6BB1694C44189C3C1A1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08A534634817C6CBD41A972C /* Pods_Graphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F815ED61D873CD10087D256 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +126,7 @@
 			children = (
 				8F815EDB1D873D5F0087D256 /* UIAlertView+Blocks.h */,
 				8F815EDC1D873D5F0087D256 /* UIAlertView+Blocks.m */,
+				8FCF1F701D881BC200DE579A /* UITextField.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -122,6 +138,8 @@
 				8FC194611D80324A002AACE6 /* GraphicsTests */,
 				8FC1946C1D80324A002AACE6 /* GraphicsUITests */,
 				8FC1944B1D803249002AACE6 /* Products */,
+				CCEC7B1407D4DF01E5E18EBE /* Pods */,
+				787F6BB1694C44189C3C1A1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +188,15 @@
 			path = GraphicsUITests;
 			sourceTree = "<group>";
 		};
+		CCEC7B1407D4DF01E5E18EBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				923EB28D086E988816EEC35F /* Pods-Graphics.debug.xcconfig */,
+				E5848C9ECDB5B02117D7C695 /* Pods-Graphics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FC194721D80324A002AACE6 /* Build configuration list for PBXNativeTarget "Graphics" */;
 			buildPhases = (
+				0A9D54582B230BC5B431DCA8 /* [CP] Check Pods Manifest.lock */,
 				8FC194461D803249002AACE6 /* Sources */,
 				8FC194471D803249002AACE6 /* Frameworks */,
 				8FC194481D803249002AACE6 /* Resources */,
+				62D54AEBF8BD510DA83D2A02 /* [CP] Embed Pods Frameworks */,
+				FCCAF8561F306AB6B886158E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +326,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A9D54582B230BC5B431DCA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62D54AEBF8BD510DA83D2A02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Graphics/Pods-Graphics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCAF8561F306AB6B886158E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Graphics/Pods-Graphics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FC194461D803249002AACE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -306,6 +384,7 @@
 				8F815EDD1D873D5F0087D256 /* UIAlertView+Blocks.m in Sources */,
 				8F815ED51D872F270087D256 /* AdditionViewController.swift in Sources */,
 				8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */,
+				8FCF1F711D881BC200DE579A /* UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,10 +526,12 @@
 		};
 		8FC194731D80324A002AACE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923EB28D086E988816EEC35F /* Pods-Graphics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Graphics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.Graphics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,10 +542,12 @@
 		};
 		8FC194741D80324A002AACE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5848C9ECDB5B02117D7C695 /* Pods-Graphics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Graphics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.Graphics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
