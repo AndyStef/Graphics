@@ -15,7 +15,7 @@ class AdditionViewController: UITableViewController {
     @IBOutlet private weak var triangleLenghtTextField: UITextField?
     @IBOutlet private weak var xPositionTextField: UITextField?
     @IBOutlet private weak var yPositionTextField: UITextField?
-
+    @IBOutlet private weak var inscribedSquareSwitch: UISwitch?
     //MARK: - Variables
     weak var delegate: MainViewController?
 
@@ -47,7 +47,7 @@ extension AdditionViewController {
             return
         }
 
-        delegate?.createTriangle(x, y: y, sideLenght: CGFloat(sideLenght))
+        delegate?.createTriangle(x, y: y, sideLenght: CGFloat(sideLenght), withInscribedSquare: inscribedSquareSwitch?.on ?? true)
         navigationController?.popViewControllerAnimated(true)
     }
 }

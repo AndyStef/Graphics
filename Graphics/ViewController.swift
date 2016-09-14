@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AdditionViewControllerDelegate: class {
-    func createTriangle(x: Double, y: Double, sideLenght: CGFloat)
+    func createTriangle(x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool)
 }
 
 class MainViewController: UIViewController {
@@ -46,6 +46,15 @@ class MainViewController: UIViewController {
         }
         return triangle
     }
+
+
+    func drawSquare(sideOfTriangle: CGFloat, triangle: TriangleView) {
+        let heigth = (sideOfTriangle * sqrt(3.0)) / 2
+        let sideOfSquare = (heigth * sideOfTriangle) / (heigth + sideOfTriangle)
+        let square = UIView(frame: CGRect(x: triangle.center.x - (sideOfSquare / 2), y: triangle.frame.origin.y + heigth - sideOfSquare, width: sideOfSquare, height: sideOfSquare))
+        square.backgroundColor = UIColor.redColor()
+        view.addSubview(square)
+    }
 }
 
 //MARK: - Actions and selectors
@@ -67,10 +76,13 @@ extension MainViewController {
 
 //MARK: - AdditionViewControllerDelegate
 extension MainViewController: AdditionViewControllerDelegate {
-    func createTriangle(x: Double, y: Double, sideLenght: CGFloat) {
+    func createTriangle(x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool) {
         let triangle = drawTriangle(x: CGFloat(x) * 10, y: CGFloat(y) * 10, sideLenght: sideLenght * 10)
         view.addSubview(triangle)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainViewController.handleTriangleTap))
         triangle.addGestureRecognizer(tapGesture)
+        if withInscribedSquare {
+            drawSquare(sideLenght * 10, triangle: triangle)
+        }
     }
 }
