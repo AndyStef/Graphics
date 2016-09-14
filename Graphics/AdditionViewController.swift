@@ -18,6 +18,8 @@ class AdditionViewController: UITableViewController {
     @IBOutlet private weak var inscribedSquareSwitch: UISwitch?
     @IBOutlet private weak var triangleColorView: UIView?
     @IBOutlet private weak var squareColorView: UIView?
+    @IBOutlet private weak var startVertexSwitch: UISegmentedControl?
+
     //MARK: - Variables
     weak var delegate: MainViewController?
 
@@ -55,7 +57,7 @@ extension AdditionViewController {
             return
         }
 
-        delegate?.createTriangle(x, y: y, sideLenght: CGFloat(sideLenght), withInscribedSquare: inscribedSquareSwitch?.on ?? true)
+        delegate?.createTriangle(x, y: y, sideLenght: CGFloat(sideLenght), withInscribedSquare: inscribedSquareSwitch?.on ?? true, startVertex: VertexType(rawValue: startVertexSwitch?.selectedSegmentIndex ?? 0) ?? .bottomLeft)
         navigationController?.popViewControllerAnimated(true)
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AdditionViewControllerDelegate: class {
-    func createTriangle(x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool)
+    func createTriangle(x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool, startVertex: VertexType)
 }
 
 class MainViewController: UIViewController {
@@ -47,7 +47,6 @@ class MainViewController: UIViewController {
         return triangle
     }
 
-
     func drawSquare(sideOfTriangle: CGFloat, triangle: TriangleView) {
         let heigth = (sideOfTriangle * sqrt(3.0)) / 2
         let sideOfSquare = (heigth * sideOfTriangle) / (heigth + sideOfTriangle)
@@ -76,13 +75,24 @@ extension MainViewController {
 
 //MARK: - AdditionViewControllerDelegate
 extension MainViewController: AdditionViewControllerDelegate {
-    func createTriangle(x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool) {
-        let triangle = drawTriangle(x: CGFloat(x) * 10, y: CGFloat(y) * 10, sideLenght: sideLenght * 10)
+    func createTriangle(x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool, startVertex: VertexType) {
+        var triangle = TriangleView()
+        let height = (sideLenght * sqrt(3.0)) / 2.0
+
+        switch startVertex {
+        case .bottomLeft:
+            triangle = drawTriangle(x: CGFloat(x) * 10, y: CGFloat(y) * 10, sideLenght: sideLenght * 11)
+        case .bottomRight:
+            triangle = drawTriangle(x: (CGFloat(x) - sideLenght) * 10, y: CGFloat(y) * 10, sideLenght: sideLenght * 11)
+        case .top:
+            triangle = drawTriangle(x: (CGFloat(x) - (sideLenght/2)) * 10 + 1, y: (CGFloat(y) - height) * 10, sideLenght: sideLenght * 11)
+        }
+
         view.addSubview(triangle)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainViewController.handleTriangleTap))
         triangle.addGestureRecognizer(tapGesture)
         if withInscribedSquare {
-            drawSquare(sideLenght * 10, triangle: triangle)
+            drawSquare(sideLenght * 11, triangle: triangle)
         }
     }
 }

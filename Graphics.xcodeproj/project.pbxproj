@@ -19,6 +19,7 @@
 		8FC1946E1D80324A002AACE6 /* GraphicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1946D1D80324A002AACE6 /* GraphicsUITests.swift */; };
 		8FC1947C1D803701002AACE6 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1947B1D803701002AACE6 /* TriangleView.swift */; };
 		8FCF1F711D881BC200DE579A /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1F701D881BC200DE579A /* UITextField.swift */; };
+		8FCF1F731D896F9000DE579A /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1F721D896F9000DE579A /* Vertex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		8FC1946F1D80324A002AACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC1947B1D803701002AACE6 /* TriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		8FCF1F701D881BC200DE579A /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		8FCF1F721D896F9000DE579A /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
 		923EB28D086E988816EEC35F /* Pods-Graphics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graphics/Pods-Graphics.debug.xcconfig"; sourceTree = "<group>"; };
 		E5848C9ECDB5B02117D7C695 /* Pods-Graphics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphics.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graphics/Pods-Graphics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				8FC1947B1D803701002AACE6 /* TriangleView.swift */,
+				8FCF1F721D896F9000DE579A /* Vertex.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				8F815EDD1D873D5F0087D256 /* UIAlertView+Blocks.m in Sources */,
 				8F815ED51D872F270087D256 /* AdditionViewController.swift in Sources */,
 				8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */,
+				8FCF1F731D896F9000DE579A /* Vertex.swift in Sources */,
 				8FCF1F711D881BC200DE579A /* UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
