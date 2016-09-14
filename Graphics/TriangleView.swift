@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class TriangleView: UIView {
-    static var fillColor: UIColor = UIColor.greenColor()
+    static var fillColor: UIColor = UIColor(red: 0.15, green: 0.59, blue: 0.58, alpha: 1.00)
 
     override init(frame: CGRect) {
         super.init(frame: frame)

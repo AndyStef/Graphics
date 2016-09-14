@@ -52,7 +52,7 @@ class MainViewController: UIViewController {
         let heigth = (sideOfTriangle * sqrt(3.0)) / 2
         let sideOfSquare = (heigth * sideOfTriangle) / (heigth + sideOfTriangle)
         let square = UIView(frame: CGRect(x: triangle.center.x - (sideOfSquare / 2), y: triangle.frame.origin.y + heigth - sideOfSquare, width: sideOfSquare, height: sideOfSquare))
-        square.backgroundColor = UIColor.redColor()
+        square.backgroundColor = UIColor(red: 0.88, green: 0.13, blue: 0.24, alpha: 1.00)
         view.addSubview(square)
     }
 }

@@ -2255,6 +2255,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Лаба 1" id="h4H-Mb-a1P">
                         <barButtonItem key="rightBarButtonItem" title="Додати" id="oi2-c9-Z2A">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="BYZ-38-t0r" id="lLz-AP-BAi"/>
                             </connections>
@@ -2331,10 +2332,10 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkA-DS-vDL">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="См" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkA-DS-vDL">
                                                     <rect key="frame" x="160" y="7" width="432" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -2355,10 +2356,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b05-iN-fbp">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="См" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b05-iN-fbp">
                                                     <rect key="frame" x="160" y="7" width="432" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Точка X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U0-0R-N8R">
                                                     <rect key="frame" x="48" y="12" width="62" height="21"/>
@@ -2391,10 +2392,10 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSf-hL-iy4">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="См" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSf-hL-iy4">
                                                     <rect key="frame" x="160" y="7" width="432" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -2426,9 +2427,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTZ-we-AHH">
-                                                    <rect key="frame" x="526" y="6" width="51" height="31"/>
-                                                    <color key="onTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="543" y="6" width="51" height="31"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -2436,7 +2435,7 @@
                                                 <constraint firstItem="ZTZ-we-AHH" firstAttribute="top" secondItem="kfZ-8U-elm" secondAttribute="topMargin" constant="-2" id="XJT-aR-hlj"/>
                                                 <constraint firstItem="Ug4-5G-ORe" firstAttribute="leading" secondItem="kfZ-8U-elm" secondAttribute="leadingMargin" id="ff5-Js-sm3"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Ug4-5G-ORe" secondAttribute="bottom" constant="3" id="jFz-fa-NOE"/>
-                                                <constraint firstItem="ZTZ-we-AHH" firstAttribute="trailing" secondItem="kfZ-8U-elm" secondAttribute="trailingMargin" constant="-17" id="pYR-dp-9Ip"/>
+                                                <constraint firstItem="ZTZ-we-AHH" firstAttribute="trailing" secondItem="kfZ-8U-elm" secondAttribute="trailingMargin" id="pYR-dp-9Ip"/>
                                                 <constraint firstItem="Ug4-5G-ORe" firstAttribute="top" secondItem="kfZ-8U-elm" secondAttribute="topMargin" constant="3" id="pzS-pS-eBF"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -2445,11 +2444,11 @@
                             </tableViewSection>
                             <tableViewSection id="tPN-Fy-VQt">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="n9g-Ir-EPq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="n9g-Ir-EPq">
                                         <rect key="frame" x="0.0" y="341" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n9g-Ir-EPq" id="7fE-Ga-gqk">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Колір трикутника" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC3-FP-CYO">
@@ -2459,8 +2458,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cF5-S3-ifV">
-                                                    <rect key="frame" x="509" y="8" width="50" height="27"/>
-                                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <rect key="frame" x="542" y="8" width="50" height="27"/>
+                                                    <color key="backgroundColor" red="0.14509803921568626" green="0.59215686274509804" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="jzK-vb-vBe"/>
                                                     </constraints>
@@ -2481,11 +2480,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="dk2-Q0-m1Y">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="dk2-Q0-m1Y">
                                         <rect key="frame" x="0.0" y="385" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dk2-Q0-m1Y" id="eme-v6-DDq">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Колір квадрата" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtF-xI-KpB">
@@ -2495,8 +2494,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubX-ED-Te6">
-                                                    <rect key="frame" x="509" y="8" width="50" height="27"/>
-                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <rect key="frame" x="542" y="8" width="50" height="27"/>
+                                                    <color key="backgroundColor" red="0.8784313725490196" green="0.13333333333333333" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="lZs-H1-cXd"/>
                                                     </constraints>
@@ -2527,6 +2526,8 @@
                     </tableView>
                     <connections>
                         <outlet property="inscribedSquareSwitch" destination="ZTZ-we-AHH" id="nLK-mI-2V1"/>
+                        <outlet property="squareColorView" destination="ubX-ED-Te6" id="chW-NN-5g9"/>
+                        <outlet property="triangleColorView" destination="cF5-S3-ifV" id="QiJ-EN-di2"/>
                         <outlet property="triangleLenghtTextField" destination="rkA-DS-vDL" id="3xd-3H-u4Y"/>
                         <outlet property="xPositionTextField" destination="b05-iN-fbp" id="CCY-mA-ssu"/>
                         <outlet property="yPositionTextField" destination="rSf-hL-iy4" id="j6O-GJ-x8L"/>
@@ -2544,7 +2545,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gkJ-Cr-Pc0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

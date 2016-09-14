@@ -16,6 +16,8 @@ class AdditionViewController: UITableViewController {
     @IBOutlet private weak var xPositionTextField: UITextField?
     @IBOutlet private weak var yPositionTextField: UITextField?
     @IBOutlet private weak var inscribedSquareSwitch: UISwitch?
+    @IBOutlet private weak var triangleColorView: UIView?
+    @IBOutlet private weak var squareColorView: UIView?
     //MARK: - Variables
     weak var delegate: MainViewController?
 
@@ -29,6 +31,12 @@ class AdditionViewController: UITableViewController {
     func decorateUI() {
         navigationItem.title = "Новий трикутник"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Створити", style: .Done, target: self, action: #selector(AdditionViewController.createButtonPressed))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.blackColor()
+        navigationItem.leftBarButtonItem?.tintColor = UIColor.blackColor()
+        triangleColorView?.layer.borderColor = UIColor.grayColor().CGColor
+        triangleColorView?.layer.borderWidth = 2.0
+        squareColorView?.layer.borderColor = UIColor.grayColor().CGColor
+        squareColorView?.layer.borderWidth = 2.0
     }
 }
 
