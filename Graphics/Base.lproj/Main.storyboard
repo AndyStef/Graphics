@@ -2275,7 +2275,7 @@
         <scene sceneID="klV-rj-qRJ">
             <objects>
                 <tableViewController storyboardIdentifier="AddTriangleViewController" id="2tb-ND-BXY" customClass="AdditionViewController" customModule="Graphics" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mG8-yh-JVA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mG8-yh-JVA" customClass="TPKeyboardAvoidingTableView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -2526,6 +2526,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="inscribedSquareSwitch" destination="ZTZ-we-AHH" id="nLK-mI-2V1"/>
                         <outlet property="triangleLenghtTextField" destination="rkA-DS-vDL" id="3xd-3H-u4Y"/>
                         <outlet property="xPositionTextField" destination="b05-iN-fbp" id="CCY-mA-ssu"/>
                         <outlet property="yPositionTextField" destination="rSf-hL-iy4" id="j6O-GJ-x8L"/>

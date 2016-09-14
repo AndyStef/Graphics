@@ -1,12 +1,15 @@
 PODS:
   - Color-Picker-for-iOS (2.0.2)
+  - TPKeyboardAvoiding (1.3)
 
 DEPENDENCIES:
   - Color-Picker-for-iOS (~> 2.0)
+  - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
   Color-Picker-for-iOS: 4980589b3e3cfe7198f227dd50be9adb02d8bc0b
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
 
-PODFILE CHECKSUM: 5b89656dbc34e5986de1826b36a8834eb65b1a10
+PODFILE CHECKSUM: 9f26cd4f6e72bd548a9d7fd1fa58a664a59fa901
 
 COCOAPODS: 1.0.1
