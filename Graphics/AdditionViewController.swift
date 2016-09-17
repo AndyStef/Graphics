@@ -30,6 +30,18 @@ class AdditionViewController: UITableViewController {
         decorateUI()
     }
 
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        navigationItem.title = "Назад"
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationItem.title = "Новий трикутник"
+    }
+
     func decorateUI() {
         navigationItem.title = "Новий трикутник"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Створити", style: .Done, target: self, action: #selector(AdditionViewController.createButtonPressed))

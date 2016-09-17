@@ -31,6 +31,18 @@ class MainViewController: UIViewController {
         view.addGestureRecognizer(pinchGesture)
     }
 
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        navigationItem.title = "Назад"
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationItem.title = "Рівносторонні трикутники"
+    }
+
     //MARK: - Drawing methods
     func drawTriangle(x x: CGFloat, y: CGFloat, sideLenght: CGFloat) -> TriangleView {
         let height = (sideLenght * sqrt(3.0)) / 2.0

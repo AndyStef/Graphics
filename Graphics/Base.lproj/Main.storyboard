@@ -2254,7 +2254,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Рівносторонні трикутники" id="h4H-Mb-a1P">
-                        <barButtonItem key="backBarButtonItem" title="Назад" id="nGn-kg-uMJ"/>
                         <barButtonItem key="rightBarButtonItem" title="Додати" id="oi2-c9-Z2A">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
