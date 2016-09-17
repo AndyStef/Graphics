@@ -25,12 +25,15 @@ class ColorPickerViewController: UIViewController {
         if let color = innitialColor {
             colorPickerView?.setViewColor(color)
         }
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Вибрати колір", style: .Done, target: self, action: #selector(ColorPickerViewController.chooseColorButtonPressed))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.blackColor()
     }
 }
 
-//MARK: - Actions
+//MARK: - Actions and selectors
 extension ColorPickerViewController {
-    @IBAction func chooseColorButtonPressed(sender: AnyObject) {
+    func chooseColorButtonPressed () {
         if isChoosingTriangleColor {
             TriangleView.triangleFillColor = colorPickerView?.color ?? UIColor()
         } else {
