@@ -1,15 +1,15 @@
 PODS:
-  - Color-Picker-for-iOS (2.0.2)
+  - SwiftHSVColorPicker (1.1.0)
   - TPKeyboardAvoiding (1.3)
 
 DEPENDENCIES:
-  - Color-Picker-for-iOS (~> 2.0)
+  - SwiftHSVColorPicker
   - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
-  Color-Picker-for-iOS: 4980589b3e3cfe7198f227dd50be9adb02d8bc0b
+  SwiftHSVColorPicker: 70e8baf5e2191886b24ef467a0044f4698f68b6b
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
 
-PODFILE CHECKSUM: 9f26cd4f6e72bd548a9d7fd1fa58a664a59fa901
+PODFILE CHECKSUM: 2d3f0608bb5f2951a6025963e1718dcfcb0d1526
 
 COCOAPODS: 1.0.1

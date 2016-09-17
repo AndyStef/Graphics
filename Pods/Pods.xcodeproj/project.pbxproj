@@ -7,168 +7,139 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09A1D382C062D57C8AD5D7FFA9BDA011 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 484EC331E8D5EAC213C478AD00124EC1 /* TPKeyboardAvoiding-dummy.m */; };
-		24E1C73355D2ACFA6FD46520708280FF /* Color-Picker-for-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93152DE7B8D6914F8B51B85235972C73 /* Color-Picker-for-iOS-dummy.m */; };
-		294C8FF0AF1D937E0464EC32BBC8910E /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FA3E627FAA95358EBD067DFD028FCB /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		30BF6899047093747807B511E82FC09D /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = D764A251236B4EC2A3BE884EA81B2BBC /* HRBrightnessCursor.m */; };
-		3AF5619643509A30D22A2AFBC59A73CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		3B4FDC3B0C4A598CFC3AAFEB8107CFEA /* HRHSVColorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDA0E96385F0FDFD8D92FA575995CD6 /* HRHSVColorUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B9509EB443CB5B10FEAC8931B7F219B /* HRBrightnessCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 629E04E5F5054BE6794CC46FD27A0586 /* HRBrightnessCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		441D0163A3D845A41C3D980FD5737519 /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A1B244801A1AFAF9D0863FFC127F60 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46A70DDF46DBF40E388D7DA8FD40BAD5 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F31845549E3368EA812FD00C1626E /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		476EADE45A42DCCF8B31C52BDF213291 /* HRColorMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 032C550338AAF9B04A2ECC3384617430 /* HRColorMapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5338CF92AD32C3D1D22BE4342B0E7B7B /* UIImage+CoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 62E64BBED52424535C5A0D41613BD897 /* UIImage+CoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6616D90A7447BA08F8A2915D3CD9B04F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		66DBD435AB08CB81530FEFB1488DA692 /* HRColorCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBD9AE4BF97D9A4F4B435FD84F7D84E /* HRColorCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		716D4A6C8912FE0EC806A0A35540FC7E /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E4F7B31C662165E355ADF63F5819AF9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76ED30C4F9604191784BDF644ABDB2E7 /* HRColorCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 345102AD61308C996D4BCFB440E9C2E0 /* HRColorCursor.m */; };
-		7850873FF21817C1B00197B16118EF58 /* HRColorInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5EAE59EA3847627A8DF050A2500003 /* HRColorInfoView.m */; };
-		868F6F2496C7AA5C763FD663CAA4996E /* Pods-Graphics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 234A50A74590A8B83127247ED1B3E482 /* Pods-Graphics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CB83FBC2944331BD582F5F84DC01BD5 /* Color-Picker-for-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 599135050FA8859CA35EF764FDFA6631 /* Color-Picker-for-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C2A31151E1103D487EF411326F610FC /* HRColorInfoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616B022BF5BEE0DBDC6DF2E0F2CCCA63 /* HRColorInfoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5B966B7DB7BE3D4A6AECF8146E9FDE2 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A809C18A15890C21B8D90312D3BE197 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7739A0DA5A05024B48BB1441DD0A9B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		B303F19B658B4A1F92036872A9933EA6 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D177F6CF953A41EF0FDDE240A641A6C /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BDFFC4B2A063086D860A690CD1DD62B0 /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = EDAF54DAA610E09721302C590DDF6C13 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE5AA217F4B0D2E571FFDC3D743CA807 /* Pods-Graphics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 660CC851A0BB4E3B728CDE47E7A0908B /* Pods-Graphics-dummy.m */; };
-		C0DCF430637A79A6AF68D2C9ECF65A65 /* HRHSVColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D5DA25F583869595A985E95EC1FF3C /* HRHSVColorUtil.m */; };
-		C7599CBFC0BE63E48BF8F7F1D2463D9F /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 243EE7416AFB65AB48DD8E6A7F311150 /* UIImage+CoreGraphics.m */; };
-		D39477A914D314A953C5EB66C98BCEFF /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FCC19936078E2F01AEF58D204C5B3E /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D85FB1D863BDA9138164F81B7ECA244A /* HRBrightnessSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E33805EA5497F76EF00696E6D4CFE77 /* HRBrightnessSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D954EED7432F2C4DEF0977B347011624 /* HRBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4994858928CDE4502AF18BCCA1AAA0EF /* HRBrightnessSlider.m */; };
-		DB7A2407BC16BD76E6665C7957B17572 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAF8B08071CCF4A6C60D80514FEC673 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E0DAD373ABA7DE3F08F8A3758BA28F32 /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A49FAC08FED11CB2B5A63D49D4A11 /* HRColorPickerView.m */; };
-		E47685EBC66F071B122727CEE65F2485 /* HRColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB8251BE29AAB340636DA5377E7092C /* HRColorPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB7C0F8DABEDD222028E7CC126BEFCE8 /* HRColorMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC158C196AC2CDA34CE3460346A0C75E /* HRColorMapView.m */; };
+		1FEA85DFB1748377D46697D885D4972F /* SwiftHSVColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C08641D99142597E1DE0EE48EC27CC4 /* SwiftHSVColorPicker-dummy.m */; };
+		2C5D8F4053C5C8ED8150012CFD7F06EE /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1FB87A7E1E96C749E56469A7CE278A /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F111D7FB72431A7067BAC319A94C6A /* SwiftHSVColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D81DC53533343AFD0B055BF507BC27A /* SwiftHSVColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451412DBCE430BB1F403336E1073893D /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB374AB817D80B018A2CB1C3C9D953 /* ColorWheel.swift */; };
+		4FA6EA15250EFE6DF57721B3B7B7CDA3 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFFA3D22A14233A4C03B26DD11B2846 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B893EA970B002BD319CFE573332C901 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F9922C9666EB669E9ED58D7A7D144C /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		77079F365FCF8FD0270A0A1D949578DF /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C169599E012CA43DFA1965E762789891 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8204C1A473FC46C5E22EB71D89CEAF09 /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562E13924B197BB43858A11D1CD4A5C /* BrightnessView.swift */; };
+		8D3C598A6DDBB74210342464DA9A5404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		8F8D79BDE9E273AC14004EEA4591E6D5 /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC9E9973AFA2E08B6D0CD3F77A794F9 /* SelectedColorView.swift */; };
+		976F782121FDD8A66A723A8030C90F96 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF39356836BC17476536BE8BF2C2A6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9E1E9564BC8CE2A1D4C816F3B43F454D /* SwiftHSVColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35893CAED899081881EF294166A03C9B /* SwiftHSVColorPicker.swift */; };
+		ABAC12A069DD320EFF95EDFDE1B967E7 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3C7440CB0BF24AEC747E981234DD3B /* TPKeyboardAvoiding-dummy.m */; };
+		B67E205E18386C860A0EDF9C1D77B5A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BE2E1AEEAE45BA0412FD1D494BC343BE /* Pods-Graphics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 234A50A74590A8B83127247ED1B3E482 /* Pods-Graphics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1131BF09B1F2F639E50562111A90F10 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F23B33AB224623B22F30F34C6FB3BF /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9975A5FA58BA023A5C7B812CF59F7F /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F6A150BFA4A8807D1BB72BB036A296 /* ColorUtils.swift */; };
+		D1B65873B3F71A8A366B4F114F68607D /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF829DA689AAF471EE9E45EC6BBE1E3 /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D95FA529C47FE47AF82E8A37C699795E /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 685296A2DAAAF748032B8A9C6717B93F /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEE68EA93A3E6648034C7F041B8DC8AC /* Pods-Graphics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 660CC851A0BB4E3B728CDE47E7A0908B /* Pods-Graphics-dummy.m */; };
+		F2CBF347DD5E080C8865AC0C4DFDB9C5 /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = CB52CBAFD3857B67B57C5EDD1116F47F /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFEB7BF51F83721943EB697BC90D0D14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4EB591B3B40D13670A5575A99B7E8BB5 /* PBXContainerItemProxy */ = {
+		58732437BC8663516F4C1F718393FED4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BB5169CC9825CD30262BC92F32A70B82;
-			remoteInfo = TPKeyboardAvoiding;
+			remoteGlobalIDString = A76EC38B4BBECBEC78A5895798336659;
+			remoteInfo = SwiftHSVColorPicker;
 		};
-		D9B3BF12E88502C79937F07CBB45E6C6 /* PBXContainerItemProxy */ = {
+		A38EF60400A4532581FE148769E9A0FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A01DCF3DD7042226A8E0B3D83E06E9C1;
-			remoteInfo = "Color-Picker-for-iOS";
+			remoteGlobalIDString = CB23C5680ED6159196AD45BAA7C65C78;
+			remoteInfo = TPKeyboardAvoiding;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		032C550338AAF9B04A2ECC3384617430 /* HRColorMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRColorMapView.h; path = ColorPicker/HRColorMapView.h; sourceTree = "<group>"; };
-		10D5DA25F583869595A985E95EC1FF3C /* HRHSVColorUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRHSVColorUtil.m; path = ColorPicker/HRHSVColorUtil.m; sourceTree = "<group>"; };
+		10F23B33AB224623B22F30F34C6FB3BF /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		18D22261E31CBC11ED7BAD6BE0B6AA97 /* Pods-Graphics-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Graphics-acknowledgements.plist"; sourceTree = "<group>"; };
-		1E4F31845549E3368EA812FD00C1626E /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
-		22816EB3D3160E23B1FF050154014619 /* Color_Picker_for_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color_Picker_for_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFFA3D22A14233A4C03B26DD11B2846 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		1D81DC53533343AFD0B055BF507BC27A /* SwiftHSVColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHSVColorPicker-umbrella.h"; sourceTree = "<group>"; };
 		234A50A74590A8B83127247ED1B3E482 /* Pods-Graphics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Graphics-umbrella.h"; sourceTree = "<group>"; };
-		243EE7416AFB65AB48DD8E6A7F311150 /* UIImage+CoreGraphics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CoreGraphics.m"; path = "ColorPicker/UIImage+CoreGraphics.m"; sourceTree = "<group>"; };
 		2723D8274C91482EE8F5BFD2DAD4FBD9 /* Pods-Graphics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Graphics.modulemap"; sourceTree = "<group>"; };
 		2A528ACBD3264FA86C671FB60F2124B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A809C18A15890C21B8D90312D3BE197 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
-		345102AD61308C996D4BCFB440E9C2E0 /* HRColorCursor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRColorCursor.m; path = ColorPicker/HRColorCursor.m; sourceTree = "<group>"; };
+		2AC9E9973AFA2E08B6D0CD3F77A794F9 /* SelectedColorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectedColorView.swift; path = Source/SelectedColorView.swift; sourceTree = "<group>"; };
+		2F9909386E2AF32D26817485CCCFDA85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35893CAED899081881EF294166A03C9B /* SwiftHSVColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHSVColorPicker.swift; path = Source/SwiftHSVColorPicker.swift; sourceTree = "<group>"; };
+		39E46B5D5D6E45B17D2E16B6CD4744BA /* SwiftHSVColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHSVColorPicker.xcconfig; sourceTree = "<group>"; };
 		3D9F8AC1BD3D80CDC7029C38D23C93D7 /* Pods-Graphics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Graphics.debug.xcconfig"; sourceTree = "<group>"; };
-		3E33805EA5497F76EF00696E6D4CFE77 /* HRBrightnessSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRBrightnessSlider.h; path = ColorPicker/HRBrightnessSlider.h; sourceTree = "<group>"; };
-		3FF87A5706FB6392E82060D2A9D6D064 /* Color-Picker-for-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Color-Picker-for-iOS.modulemap"; sourceTree = "<group>"; };
-		484EC331E8D5EAC213C478AD00124EC1 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
-		4994858928CDE4502AF18BCCA1AAA0EF /* HRBrightnessSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessSlider.m; path = ColorPicker/HRBrightnessSlider.m; sourceTree = "<group>"; };
-		4C2A49FAC08FED11CB2B5A63D49D4A11 /* HRColorPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRColorPickerView.m; path = ColorPicker/HRColorPickerView.m; sourceTree = "<group>"; };
-		5460E7ACA1CBB2B5DDB2EE45696DEF1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54A1DAD04DE68CA91112999D77C83DBF /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
-		599135050FA8859CA35EF764FDFA6631 /* Color-Picker-for-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Color-Picker-for-iOS-umbrella.h"; sourceTree = "<group>"; };
-		616B022BF5BEE0DBDC6DF2E0F2CCCA63 /* HRColorInfoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRColorInfoView.h; path = ColorPicker/HRColorInfoView.h; sourceTree = "<group>"; };
-		629E04E5F5054BE6794CC46FD27A0586 /* HRBrightnessCursor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRBrightnessCursor.h; path = ColorPicker/HRBrightnessCursor.h; sourceTree = "<group>"; };
-		62E64BBED52424535C5A0D41613BD897 /* UIImage+CoreGraphics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CoreGraphics.h"; path = "ColorPicker/UIImage+CoreGraphics.h"; sourceTree = "<group>"; };
+		4785FC4192671A76178B9B9F55D05CA7 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		51F9922C9666EB669E9ED58D7A7D144C /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		58CCCFB3DB10384A6F9E31D83158444C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		660CC851A0BB4E3B728CDE47E7A0908B /* Pods-Graphics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Graphics-dummy.m"; sourceTree = "<group>"; };
-		6BB8251BE29AAB340636DA5377E7092C /* HRColorPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRColorPickerView.h; path = ColorPicker/HRColorPickerView.h; sourceTree = "<group>"; };
-		6D177F6CF953A41EF0FDDE240A641A6C /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		685296A2DAAAF748032B8A9C6717B93F /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		6A5466ED55AD1E7B9C92A5E8183092D1 /* Pods_Graphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Graphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C08641D99142597E1DE0EE48EC27CC4 /* SwiftHSVColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHSVColorPicker-dummy.m"; sourceTree = "<group>"; };
 		70AC67CD7BC556FE15779156E320426A /* Pods-Graphics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Graphics.release.xcconfig"; sourceTree = "<group>"; };
-		73FA3E627FAA95358EBD067DFD028FCB /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		738E44DA3739707606D5940CEFB1E63E /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
 		773BA59C3F23B84CD1B89F41E002F028 /* Pods-Graphics-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Graphics-frameworks.sh"; sourceTree = "<group>"; };
-		7E4F7B31C662165E355ADF63F5819AF9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
-		7EDA0E96385F0FDFD8D92FA575995CD6 /* HRHSVColorUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRHSVColorUtil.h; path = ColorPicker/HRHSVColorUtil.h; sourceTree = "<group>"; };
-		7FBD9AE4BF97D9A4F4B435FD84F7D84E /* HRColorCursor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRColorCursor.h; path = ColorPicker/HRColorCursor.h; sourceTree = "<group>"; };
-		8209DFA536EC3C65486BE17EAEEEF832 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
-		91FCC19936078E2F01AEF58D204C5B3E /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
-		93152DE7B8D6914F8B51B85235972C73 /* Color-Picker-for-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Color-Picker-for-iOS-dummy.m"; sourceTree = "<group>"; };
+		7C092EC12EE5959790A433E030312FF8 /* SwiftHSVColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHSVColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B4591DD2C01EA1B753B26D4FAF9A58 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
+		917E5F669C6A934763AC48038073D25C /* SwiftHSVColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftHSVColorPicker.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A59DD84219DCBEBCE2E2B64134CA6F02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B1FB87A7E1E96C749E56469A7CE278A /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		A562E13924B197BB43858A11D1CD4A5C /* BrightnessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrightnessView.swift; path = Source/BrightnessView.swift; sourceTree = "<group>"; };
 		A6E9530D3ECF808B38A66C5B3433351A /* Pods-Graphics-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Graphics-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AE5EAE59EA3847627A8DF050A2500003 /* HRColorInfoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRColorInfoView.m; path = ColorPicker/HRColorInfoView.m; sourceTree = "<group>"; };
-		B3BF49ADB18354041D54A9FBD17D5D68 /* Pods_Graphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Graphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA19082A0F6E49DD20987D54B21C139E /* Color-Picker-for-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Color-Picker-for-iOS-prefix.pch"; sourceTree = "<group>"; };
-		BE4E0FD60839ED5C9F3E36100191BE66 /* Color-Picker-for-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Color-Picker-for-iOS.xcconfig"; sourceTree = "<group>"; };
+		B5DF39356836BC17476536BE8BF2C2A6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		C169599E012CA43DFA1965E762789891 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		CB52CBAFD3857B67B57C5EDD1116F47F /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		CCF829DA689AAF471EE9E45EC6BBE1E3 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D764A251236B4EC2A3BE884EA81B2BBC /* HRBrightnessCursor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessCursor.m; path = ColorPicker/HRBrightnessCursor.m; sourceTree = "<group>"; };
-		D7AD250A82C5DA5B1356295911573EB9 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1A373F1BA19BF152F50FFE239D9A102 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
-		EBAF8B08071CCF4A6C60D80514FEC673 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
-		EDAF54DAA610E09721302C590DDF6C13 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
-		F4A1B244801A1AFAF9D0863FFC127F60 /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
-		FC158C196AC2CDA34CE3460346A0C75E /* HRColorMapView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRColorMapView.m; path = ColorPicker/HRColorMapView.m; sourceTree = "<group>"; };
+		D1F6A150BFA4A8807D1BB72BB036A296 /* ColorUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorUtils.swift; path = Source/ColorUtils.swift; sourceTree = "<group>"; };
+		DE3C7440CB0BF24AEC747E981234DD3B /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		E0FB374AB817D80B018A2CB1C3C9D953 /* ColorWheel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorWheel.swift; path = Source/ColorWheel.swift; sourceTree = "<group>"; };
+		F24789F8865B0EB666A4F598FD688F2E /* SwiftHSVColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHSVColorPicker-prefix.pch"; sourceTree = "<group>"; };
 		FC509C82950E0A28025AF48E70983C75 /* Pods-Graphics-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Graphics-resources.sh"; sourceTree = "<group>"; };
+		FFB57F5DD0D3DEFC491AD4105C0C3695 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		079E78728B35E54EB176E227BEDE1E80 /* Frameworks */ = {
+		0983874ABB11C22CAD727A885F0ED9D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6616D90A7447BA08F8A2915D3CD9B04F /* Foundation.framework in Frameworks */,
+				FFEB7BF51F83721943EB697BC90D0D14 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		473D75046862984488881BCD12979A6A /* Frameworks */ = {
+		39CF4AF0518FD0BADEA874319C147736 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF5619643509A30D22A2AFBC59A73CA /* Foundation.framework in Frameworks */,
+				8D3C598A6DDBB74210342464DA9A5404 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A54C81A68B590BC0B3B4468E31623AB /* Frameworks */ = {
+		CF218F53B0C43D93ABF8F20DA29B179A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7739A0DA5A05024B48BB1441DD0A9B5 /* Foundation.framework in Frameworks */,
+				B67E205E18386C860A0EDF9C1D77B5A3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13764673F18D980BD704264800B75E23 /* Support Files */ = {
+		1828E5379C6A137F27BB6BC8C6058A0C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3FF87A5706FB6392E82060D2A9D6D064 /* Color-Picker-for-iOS.modulemap */,
-				BE4E0FD60839ED5C9F3E36100191BE66 /* Color-Picker-for-iOS.xcconfig */,
-				93152DE7B8D6914F8B51B85235972C73 /* Color-Picker-for-iOS-dummy.m */,
-				BA19082A0F6E49DD20987D54B21C139E /* Color-Picker-for-iOS-prefix.pch */,
-				599135050FA8859CA35EF764FDFA6631 /* Color-Picker-for-iOS-umbrella.h */,
-				A59DD84219DCBEBCE2E2B64134CA6F02 /* Info.plist */,
+				58CCCFB3DB10384A6F9E31D83158444C /* Info.plist */,
+				917E5F669C6A934763AC48038073D25C /* SwiftHSVColorPicker.modulemap */,
+				39E46B5D5D6E45B17D2E16B6CD4744BA /* SwiftHSVColorPicker.xcconfig */,
+				6C08641D99142597E1DE0EE48EC27CC4 /* SwiftHSVColorPicker-dummy.m */,
+				F24789F8865B0EB666A4F598FD688F2E /* SwiftHSVColorPicker-prefix.pch */,
+				1D81DC53533343AFD0B055BF507BC27A /* SwiftHSVColorPicker-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Color-Picker-for-iOS";
+			path = "../Target Support Files/SwiftHSVColorPicker";
 			sourceTree = "<group>";
 		};
-		16DE70BAC2FD8A58C1B2D87FB1765FC1 /* TPKeyboardAvoiding */ = {
+		215EDA8E1FE975952D1280ECE5B8989A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2A809C18A15890C21B8D90312D3BE197 /* TPKeyboardAvoidingCollectionView.h */,
-				6D177F6CF953A41EF0FDDE240A641A6C /* TPKeyboardAvoidingCollectionView.m */,
-				EDAF54DAA610E09721302C590DDF6C13 /* TPKeyboardAvoidingScrollView.h */,
-				73FA3E627FAA95358EBD067DFD028FCB /* TPKeyboardAvoidingScrollView.m */,
-				91FCC19936078E2F01AEF58D204C5B3E /* TPKeyboardAvoidingTableView.h */,
-				1E4F31845549E3368EA812FD00C1626E /* TPKeyboardAvoidingTableView.m */,
-				7E4F7B31C662165E355ADF63F5819AF9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
-				EBAF8B08071CCF4A6C60D80514FEC673 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
-				626945EEE7A87A7D950E0C743BC2C9EF /* Support Files */,
+				7A27DFAE2AFA4CFC4A27039EEB1094A9 /* SwiftHSVColorPicker */,
+				51ADD493D3934CC8FE5881078F4FEDEB /* TPKeyboardAvoiding */,
 			);
-			path = TPKeyboardAvoiding;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		331BECFA93DA1609EEB4645F57EAE057 /* Targets Support Files */ = {
@@ -187,42 +158,47 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		626945EEE7A87A7D950E0C743BC2C9EF /* Support Files */ = {
+		51ADD493D3934CC8FE5881078F4FEDEB /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
-				5460E7ACA1CBB2B5DDB2EE45696DEF1C /* Info.plist */,
-				8209DFA536EC3C65486BE17EAEEEF832 /* TPKeyboardAvoiding.modulemap */,
-				54A1DAD04DE68CA91112999D77C83DBF /* TPKeyboardAvoiding.xcconfig */,
-				484EC331E8D5EAC213C478AD00124EC1 /* TPKeyboardAvoiding-dummy.m */,
-				E1A373F1BA19BF152F50FFE239D9A102 /* TPKeyboardAvoiding-prefix.pch */,
-				F4A1B244801A1AFAF9D0863FFC127F60 /* TPKeyboardAvoiding-umbrella.h */,
+				9B1FB87A7E1E96C749E56469A7CE278A /* TPKeyboardAvoidingCollectionView.h */,
+				51F9922C9666EB669E9ED58D7A7D144C /* TPKeyboardAvoidingCollectionView.m */,
+				CB52CBAFD3857B67B57C5EDD1116F47F /* TPKeyboardAvoidingScrollView.h */,
+				CCF829DA689AAF471EE9E45EC6BBE1E3 /* TPKeyboardAvoidingScrollView.m */,
+				10F23B33AB224623B22F30F34C6FB3BF /* TPKeyboardAvoidingTableView.h */,
+				C169599E012CA43DFA1965E762789891 /* TPKeyboardAvoidingTableView.m */,
+				1CFFA3D22A14233A4C03B26DD11B2846 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				B5DF39356836BC17476536BE8BF2C2A6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				7AC444907243B8D6973E0329C20DAB37 /* Support Files */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		7A27DFAE2AFA4CFC4A27039EEB1094A9 /* SwiftHSVColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A562E13924B197BB43858A11D1CD4A5C /* BrightnessView.swift */,
+				D1F6A150BFA4A8807D1BB72BB036A296 /* ColorUtils.swift */,
+				E0FB374AB817D80B018A2CB1C3C9D953 /* ColorWheel.swift */,
+				2AC9E9973AFA2E08B6D0CD3F77A794F9 /* SelectedColorView.swift */,
+				35893CAED899081881EF294166A03C9B /* SwiftHSVColorPicker.swift */,
+				1828E5379C6A137F27BB6BC8C6058A0C /* Support Files */,
+			);
+			path = SwiftHSVColorPicker;
+			sourceTree = "<group>";
+		};
+		7AC444907243B8D6973E0329C20DAB37 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F9909386E2AF32D26817485CCCFDA85 /* Info.plist */,
+				4785FC4192671A76178B9B9F55D05CA7 /* TPKeyboardAvoiding.modulemap */,
+				84B4591DD2C01EA1B753B26D4FAF9A58 /* TPKeyboardAvoiding.xcconfig */,
+				DE3C7440CB0BF24AEC747E981234DD3B /* TPKeyboardAvoiding-dummy.m */,
+				738E44DA3739707606D5940CEFB1E63E /* TPKeyboardAvoiding-prefix.pch */,
+				685296A2DAAAF748032B8A9C6717B93F /* TPKeyboardAvoiding-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TPKeyboardAvoiding";
-			sourceTree = "<group>";
-		};
-		6FAC54B9283D4F5942BB0EA85CFB7366 /* Color-Picker-for-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				629E04E5F5054BE6794CC46FD27A0586 /* HRBrightnessCursor.h */,
-				D764A251236B4EC2A3BE884EA81B2BBC /* HRBrightnessCursor.m */,
-				3E33805EA5497F76EF00696E6D4CFE77 /* HRBrightnessSlider.h */,
-				4994858928CDE4502AF18BCCA1AAA0EF /* HRBrightnessSlider.m */,
-				7FBD9AE4BF97D9A4F4B435FD84F7D84E /* HRColorCursor.h */,
-				345102AD61308C996D4BCFB440E9C2E0 /* HRColorCursor.m */,
-				616B022BF5BEE0DBDC6DF2E0F2CCCA63 /* HRColorInfoView.h */,
-				AE5EAE59EA3847627A8DF050A2500003 /* HRColorInfoView.m */,
-				032C550338AAF9B04A2ECC3384617430 /* HRColorMapView.h */,
-				FC158C196AC2CDA34CE3460346A0C75E /* HRColorMapView.m */,
-				6BB8251BE29AAB340636DA5377E7092C /* HRColorPickerView.h */,
-				4C2A49FAC08FED11CB2B5A63D49D4A11 /* HRColorPickerView.m */,
-				7EDA0E96385F0FDFD8D92FA575995CD6 /* HRHSVColorUtil.h */,
-				10D5DA25F583869595A985E95EC1FF3C /* HRHSVColorUtil.m */,
-				62E64BBED52424535C5A0D41613BD897 /* UIImage+CoreGraphics.h */,
-				243EE7416AFB65AB48DD8E6A7F311150 /* UIImage+CoreGraphics.m */,
-				13764673F18D980BD704264800B75E23 /* Support Files */,
-			);
-			path = "Color-Picker-for-iOS";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -230,8 +206,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A00A682DEC26E23F4EE469A70C17959E /* Pods */,
-				E326C65E146A24590583A992816C651D /* Products */,
+				215EDA8E1FE975952D1280ECE5B8989A /* Pods */,
+				F9AED0C954988B30ED92DB0971310834 /* Products */,
 				331BECFA93DA1609EEB4645F57EAE057 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -254,15 +230,6 @@
 			path = "Target Support Files/Pods-Graphics";
 			sourceTree = "<group>";
 		};
-		A00A682DEC26E23F4EE469A70C17959E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6FAC54B9283D4F5942BB0EA85CFB7366 /* Color-Picker-for-iOS */,
-				16DE70BAC2FD8A58C1B2D87FB1765FC1 /* TPKeyboardAvoiding */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,12 +238,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E326C65E146A24590583A992816C651D /* Products */ = {
+		F9AED0C954988B30ED92DB0971310834 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22816EB3D3160E23B1FF050154014619 /* Color_Picker_for_iOS.framework */,
-				B3BF49ADB18354041D54A9FBD17D5D68 /* Pods_Graphics.framework */,
-				D7AD250A82C5DA5B1356295911573EB9 /* TPKeyboardAvoiding.framework */,
+				6A5466ED55AD1E7B9C92A5E8183092D1 /* Pods_Graphics.framework */,
+				7C092EC12EE5959790A433E030312FF8 /* SwiftHSVColorPicker.framework */,
+				FFB57F5DD0D3DEFC491AD4105C0C3695 /* TPKeyboardAvoiding.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -284,88 +251,80 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		454B11BE979C5997AD70ADC2DCD07B3B /* Headers */ = {
+		4057C7002605377A9A1BB74EAA85BC0F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				441D0163A3D845A41C3D980FD5737519 /* TPKeyboardAvoiding-umbrella.h in Headers */,
-				A5B966B7DB7BE3D4A6AECF8146E9FDE2 /* TPKeyboardAvoidingCollectionView.h in Headers */,
-				BDFFC4B2A063086D860A690CD1DD62B0 /* TPKeyboardAvoidingScrollView.h in Headers */,
-				D39477A914D314A953C5EB66C98BCEFF /* TPKeyboardAvoidingTableView.h in Headers */,
-				716D4A6C8912FE0EC806A0A35540FC7E /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+				D95FA529C47FE47AF82E8A37C699795E /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				2C5D8F4053C5C8ED8150012CFD7F06EE /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				F2CBF347DD5E080C8865AC0C4DFDB9C5 /* TPKeyboardAvoidingScrollView.h in Headers */,
+				C1131BF09B1F2F639E50562111A90F10 /* TPKeyboardAvoidingTableView.h in Headers */,
+				4FA6EA15250EFE6DF57721B3B7B7CDA3 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B05D808FBE462D3C68152AD6B63061E9 /* Headers */ = {
+		4D3A53CFE048E85A5AB40AF596018042 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				868F6F2496C7AA5C763FD663CAA4996E /* Pods-Graphics-umbrella.h in Headers */,
+				BE2E1AEEAE45BA0412FD1D494BC343BE /* Pods-Graphics-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFEE5F05D5F2706BB90AFA9AA23356F3 /* Headers */ = {
+		D6C4A44209536B4453AFD9267F25780B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB83FBC2944331BD582F5F84DC01BD5 /* Color-Picker-for-iOS-umbrella.h in Headers */,
-				3B9509EB443CB5B10FEAC8931B7F219B /* HRBrightnessCursor.h in Headers */,
-				D85FB1D863BDA9138164F81B7ECA244A /* HRBrightnessSlider.h in Headers */,
-				66DBD435AB08CB81530FEFB1488DA692 /* HRColorCursor.h in Headers */,
-				9C2A31151E1103D487EF411326F610FC /* HRColorInfoView.h in Headers */,
-				476EADE45A42DCCF8B31C52BDF213291 /* HRColorMapView.h in Headers */,
-				E47685EBC66F071B122727CEE65F2485 /* HRColorPickerView.h in Headers */,
-				3B4FDC3B0C4A598CFC3AAFEB8107CFEA /* HRHSVColorUtil.h in Headers */,
-				5338CF92AD32C3D1D22BE4342B0E7B7B /* UIImage+CoreGraphics.h in Headers */,
+				31F111D7FB72431A7067BAC319A94C6A /* SwiftHSVColorPicker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5FFF5C16FA7528F824477DFCEDFD421F /* Pods-Graphics */ = {
+		356648CB10C1127CAF0B395872F2211C /* Pods-Graphics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2716D1A90BBA6E1CA95FAE8D4DD118DF /* Build configuration list for PBXNativeTarget "Pods-Graphics" */;
+			buildConfigurationList = A399BB88A76838D1BAE7EF6DAB850666 /* Build configuration list for PBXNativeTarget "Pods-Graphics" */;
 			buildPhases = (
-				161ADCEA84ABE438DA64F3752A0FA3D2 /* Sources */,
-				473D75046862984488881BCD12979A6A /* Frameworks */,
-				B05D808FBE462D3C68152AD6B63061E9 /* Headers */,
+				2A0BE246A616EE7256AA79940589EAB6 /* Sources */,
+				CF218F53B0C43D93ABF8F20DA29B179A /* Frameworks */,
+				4D3A53CFE048E85A5AB40AF596018042 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				20CBCCFE6E9D0CF2322BE7055ED1CBE9 /* PBXTargetDependency */,
-				226BB0921D415E6E16D43C3FA422406C /* PBXTargetDependency */,
+				0B1F43DFCA3A1C09EEA5918CA90D731C /* PBXTargetDependency */,
+				0956BFBF4FC64454561BB37ED0EC6539 /* PBXTargetDependency */,
 			);
 			name = "Pods-Graphics";
 			productName = "Pods-Graphics";
-			productReference = B3BF49ADB18354041D54A9FBD17D5D68 /* Pods_Graphics.framework */;
+			productReference = 6A5466ED55AD1E7B9C92A5E8183092D1 /* Pods_Graphics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A01DCF3DD7042226A8E0B3D83E06E9C1 /* Color-Picker-for-iOS */ = {
+		A76EC38B4BBECBEC78A5895798336659 /* SwiftHSVColorPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B1343DA9E2BD6D8D067A41512FA3B90 /* Build configuration list for PBXNativeTarget "Color-Picker-for-iOS" */;
+			buildConfigurationList = 5AD2BF0BF15093E19422BBD7607F5362 /* Build configuration list for PBXNativeTarget "SwiftHSVColorPicker" */;
 			buildPhases = (
-				29E5754989F142A9150C7E7FB929CBAD /* Sources */,
-				079E78728B35E54EB176E227BEDE1E80 /* Frameworks */,
-				BFEE5F05D5F2706BB90AFA9AA23356F3 /* Headers */,
+				C7EE5B74A563DA4A69A302B88D07A5AB /* Sources */,
+				0983874ABB11C22CAD727A885F0ED9D3 /* Frameworks */,
+				D6C4A44209536B4453AFD9267F25780B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Color-Picker-for-iOS";
-			productName = "Color-Picker-for-iOS";
-			productReference = 22816EB3D3160E23B1FF050154014619 /* Color_Picker_for_iOS.framework */;
+			name = SwiftHSVColorPicker;
+			productName = SwiftHSVColorPicker;
+			productReference = 7C092EC12EE5959790A433E030312FF8 /* SwiftHSVColorPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BB5169CC9825CD30262BC92F32A70B82 /* TPKeyboardAvoiding */ = {
+		CB23C5680ED6159196AD45BAA7C65C78 /* TPKeyboardAvoiding */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10B8AF1B3FF90964B6728FF61F069C76 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildConfigurationList = 122F3B14767BABB336508136F833C0EC /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
 			buildPhases = (
-				30FA2A10263D901B243B7C22E58E241C /* Sources */,
-				8A54C81A68B590BC0B3B4468E31623AB /* Frameworks */,
-				454B11BE979C5997AD70ADC2DCD07B3B /* Headers */,
+				E047B68BCBDFD7990A3BE3470DE25AF0 /* Sources */,
+				39CF4AF0518FD0BADEA874319C147736 /* Frameworks */,
+				4057C7002605377A9A1BB74EAA85BC0F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -373,7 +332,7 @@
 			);
 			name = TPKeyboardAvoiding;
 			productName = TPKeyboardAvoiding;
-			productReference = D7AD250A82C5DA5B1356295911573EB9 /* TPKeyboardAvoiding.framework */;
+			productReference = FFB57F5DD0D3DEFC491AD4105C0C3695 /* TPKeyboardAvoiding.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -393,75 +352,72 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E326C65E146A24590583A992816C651D /* Products */;
+			productRefGroup = F9AED0C954988B30ED92DB0971310834 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A01DCF3DD7042226A8E0B3D83E06E9C1 /* Color-Picker-for-iOS */,
-				5FFF5C16FA7528F824477DFCEDFD421F /* Pods-Graphics */,
-				BB5169CC9825CD30262BC92F32A70B82 /* TPKeyboardAvoiding */,
+				356648CB10C1127CAF0B395872F2211C /* Pods-Graphics */,
+				A76EC38B4BBECBEC78A5895798336659 /* SwiftHSVColorPicker */,
+				CB23C5680ED6159196AD45BAA7C65C78 /* TPKeyboardAvoiding */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		161ADCEA84ABE438DA64F3752A0FA3D2 /* Sources */ = {
+		2A0BE246A616EE7256AA79940589EAB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5AA217F4B0D2E571FFDC3D743CA807 /* Pods-Graphics-dummy.m in Sources */,
+				EEE68EA93A3E6648034C7F041B8DC8AC /* Pods-Graphics-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29E5754989F142A9150C7E7FB929CBAD /* Sources */ = {
+		C7EE5B74A563DA4A69A302B88D07A5AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E1C73355D2ACFA6FD46520708280FF /* Color-Picker-for-iOS-dummy.m in Sources */,
-				30BF6899047093747807B511E82FC09D /* HRBrightnessCursor.m in Sources */,
-				D954EED7432F2C4DEF0977B347011624 /* HRBrightnessSlider.m in Sources */,
-				76ED30C4F9604191784BDF644ABDB2E7 /* HRColorCursor.m in Sources */,
-				7850873FF21817C1B00197B16118EF58 /* HRColorInfoView.m in Sources */,
-				EB7C0F8DABEDD222028E7CC126BEFCE8 /* HRColorMapView.m in Sources */,
-				E0DAD373ABA7DE3F08F8A3758BA28F32 /* HRColorPickerView.m in Sources */,
-				C0DCF430637A79A6AF68D2C9ECF65A65 /* HRHSVColorUtil.m in Sources */,
-				C7599CBFC0BE63E48BF8F7F1D2463D9F /* UIImage+CoreGraphics.m in Sources */,
+				8204C1A473FC46C5E22EB71D89CEAF09 /* BrightnessView.swift in Sources */,
+				CA9975A5FA58BA023A5C7B812CF59F7F /* ColorUtils.swift in Sources */,
+				451412DBCE430BB1F403336E1073893D /* ColorWheel.swift in Sources */,
+				8F8D79BDE9E273AC14004EEA4591E6D5 /* SelectedColorView.swift in Sources */,
+				1FEA85DFB1748377D46697D885D4972F /* SwiftHSVColorPicker-dummy.m in Sources */,
+				9E1E9564BC8CE2A1D4C816F3B43F454D /* SwiftHSVColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30FA2A10263D901B243B7C22E58E241C /* Sources */ = {
+		E047B68BCBDFD7990A3BE3470DE25AF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09A1D382C062D57C8AD5D7FFA9BDA011 /* TPKeyboardAvoiding-dummy.m in Sources */,
-				B303F19B658B4A1F92036872A9933EA6 /* TPKeyboardAvoidingCollectionView.m in Sources */,
-				294C8FF0AF1D937E0464EC32BBC8910E /* TPKeyboardAvoidingScrollView.m in Sources */,
-				46A70DDF46DBF40E388D7DA8FD40BAD5 /* TPKeyboardAvoidingTableView.m in Sources */,
-				DB7A2407BC16BD76E6665C7957B17572 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				ABAC12A069DD320EFF95EDFDE1B967E7 /* TPKeyboardAvoiding-dummy.m in Sources */,
+				5B893EA970B002BD319CFE573332C901 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				D1B65873B3F71A8A366B4F114F68607D /* TPKeyboardAvoidingScrollView.m in Sources */,
+				77079F365FCF8FD0270A0A1D949578DF /* TPKeyboardAvoidingTableView.m in Sources */,
+				976F782121FDD8A66A723A8030C90F96 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		20CBCCFE6E9D0CF2322BE7055ED1CBE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Color-Picker-for-iOS";
-			target = A01DCF3DD7042226A8E0B3D83E06E9C1 /* Color-Picker-for-iOS */;
-			targetProxy = D9B3BF12E88502C79937F07CBB45E6C6 /* PBXContainerItemProxy */;
-		};
-		226BB0921D415E6E16D43C3FA422406C /* PBXTargetDependency */ = {
+		0956BFBF4FC64454561BB37ED0EC6539 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TPKeyboardAvoiding;
-			target = BB5169CC9825CD30262BC92F32A70B82 /* TPKeyboardAvoiding */;
-			targetProxy = 4EB591B3B40D13670A5575A99B7E8BB5 /* PBXContainerItemProxy */;
+			target = CB23C5680ED6159196AD45BAA7C65C78 /* TPKeyboardAvoiding */;
+			targetProxy = A38EF60400A4532581FE148769E9A0FC /* PBXContainerItemProxy */;
+		};
+		0B1F43DFCA3A1C09EEA5918CA90D731C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHSVColorPicker;
+			target = A76EC38B4BBECBEC78A5895798336659 /* SwiftHSVColorPicker */;
+			targetProxy = 58732437BC8663516F4C1F718393FED4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		23477B1175C0F5E444C921E26EF6F08F /* Release */ = {
+		2E724ADC22B21D04332858E391DA0EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE4E0FD60839ED5C9F3E36100191BE66 /* Color-Picker-for-iOS.xcconfig */;
+			baseConfigurationReference = 84B4591DD2C01EA1B753B26D4FAF9A58 /* TPKeyboardAvoiding.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -472,47 +428,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Color-Picker-for-iOS/Color-Picker-for-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Color-Picker-for-iOS/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Color-Picker-for-iOS/Color-Picker-for-iOS.modulemap";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Color_Picker_for_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4247828BBBFE478BDED67160D4459C43 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70AC67CD7BC556FE15779156E320426A /* Pods-Graphics.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Graphics/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Graphics/Pods-Graphics.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Graphics;
+				PRODUCT_NAME = TPKeyboardAvoiding;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -563,7 +486,66 @@
 			};
 			name = Debug;
 		};
-		50DA68B0DDFF1BC72014F0FE9F4E440E /* Debug */ = {
+		6C417C9CCA1DEC9DC3A717C4957B0408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B4591DD2C01EA1B753B26D4FAF9A58 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C62B73CF55E92B2134A03217BF97969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E46B5D5D6E45B17D2E16B6CD4744BA /* SwiftHSVColorPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHSVColorPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftHSVColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81B95E03D60A3130778C960F168D5FD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D9F8AC1BD3D80CDC7029C38D23C93D7 /* Pods-Graphics.debug.xcconfig */;
 			buildSettings = {
@@ -590,40 +572,41 @@
 				PRODUCT_NAME = Pods_Graphics;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		5248988B0B095FAC8E7B101733248055 /* Debug */ = {
+		9207DA8B24C76A08D980D700D3AF7518 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54A1DAD04DE68CA91112999D77C83DBF /* TPKeyboardAvoiding.xcconfig */;
+			baseConfigurationReference = 39E46B5D5D6E45B17D2E16B6CD4744BA /* SwiftHSVColorPicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHSVColorPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TPKeyboardAvoiding;
+				MODULEMAP_FILE = "Target Support Files/SwiftHSVColorPicker/SwiftHSVColorPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftHSVColorPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -663,9 +646,9 @@
 			};
 			name = Release;
 		};
-		C05C4D225FA6A3675E72774C5015234A /* Release */ = {
+		D0A89A3771DBB62A7848603D583500A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54A1DAD04DE68CA91112999D77C83DBF /* TPKeyboardAvoiding.xcconfig */;
+			baseConfigurationReference = 70AC67CD7BC556FE15779156E320426A /* Pods-Graphics.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -676,14 +659,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Graphics/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Graphics/Pods-Graphics.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TPKeyboardAvoiding;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Graphics;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -692,61 +679,14 @@
 			};
 			name = Release;
 		};
-		D03CA785A55AB6F921F85789795605BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE4E0FD60839ED5C9F3E36100191BE66 /* Color-Picker-for-iOS.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Color-Picker-for-iOS/Color-Picker-for-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Color-Picker-for-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Color-Picker-for-iOS/Color-Picker-for-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Color_Picker_for_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10B8AF1B3FF90964B6728FF61F069C76 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+		122F3B14767BABB336508136F833C0EC /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5248988B0B095FAC8E7B101733248055 /* Debug */,
-				C05C4D225FA6A3675E72774C5015234A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1B1343DA9E2BD6D8D067A41512FA3B90 /* Build configuration list for PBXNativeTarget "Color-Picker-for-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D03CA785A55AB6F921F85789795605BA /* Debug */,
-				23477B1175C0F5E444C921E26EF6F08F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2716D1A90BBA6E1CA95FAE8D4DD118DF /* Build configuration list for PBXNativeTarget "Pods-Graphics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50DA68B0DDFF1BC72014F0FE9F4E440E /* Debug */,
-				4247828BBBFE478BDED67160D4459C43 /* Release */,
+				6C417C9CCA1DEC9DC3A717C4957B0408 /* Debug */,
+				2E724ADC22B21D04332858E391DA0EA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -756,6 +696,24 @@
 			buildConfigurations = (
 				47BEF9D903506B003EA5C2B249729489 /* Debug */,
 				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AD2BF0BF15093E19422BBD7607F5362 /* Build configuration list for PBXNativeTarget "SwiftHSVColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C62B73CF55E92B2134A03217BF97969 /* Debug */,
+				9207DA8B24C76A08D980D700D3AF7518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A399BB88A76838D1BAE7EF6DAB850666 /* Build configuration list for PBXNativeTarget "Pods-Graphics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B95E03D60A3130778C960F168D5FD4 /* Debug */,
+				D0A89A3771DBB62A7848603D583500A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
