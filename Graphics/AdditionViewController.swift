@@ -16,9 +16,9 @@ class AdditionViewController: UITableViewController {
     @IBOutlet private weak var xPositionTextField: UITextField?
     @IBOutlet private weak var yPositionTextField: UITextField?
     @IBOutlet private weak var inscribedSquareSwitch: UISwitch?
-    @IBOutlet private weak var triangleColorView: UIView?
-    @IBOutlet private weak var squareColorView: UIView?
     @IBOutlet private weak var startVertexSwitch: UISegmentedControl?
+    @IBOutlet private weak var triangleColorButton: UIButton?
+    @IBOutlet private weak var squreColorButton: UIButton?
 
     //MARK: - Variables
     weak var delegate: MainViewController?
@@ -35,10 +35,12 @@ class AdditionViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Створити", style: .Done, target: self, action: #selector(AdditionViewController.createButtonPressed))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.blackColor()
         navigationItem.leftBarButtonItem?.tintColor = UIColor.blackColor()
-        triangleColorView?.layer.borderColor = UIColor.grayColor().CGColor
-        triangleColorView?.layer.borderWidth = 2.0
-        squareColorView?.layer.borderColor = UIColor.grayColor().CGColor
-        squareColorView?.layer.borderWidth = 2.0
+        triangleColorButton?.layer.borderColor = UIColor.grayColor().CGColor
+        triangleColorButton?.layer.borderWidth = 2.0
+        squreColorButton?.layer.borderColor = UIColor.grayColor().CGColor
+        squreColorButton?.layer.borderWidth = 2.0
+        triangleColorButton?.backgroundColor = TriangleView.triangleFillColor
+        squreColorButton?.backgroundColor = TriangleView.squareFillColor
     }
 }
 
@@ -59,5 +61,33 @@ extension AdditionViewController {
 
         delegate?.createTriangle(x, y: y, sideLenght: CGFloat(sideLenght), withInscribedSquare: inscribedSquareSwitch?.on ?? true, startVertex: VertexType(rawValue: startVertexSwitch?.selectedSegmentIndex ?? 0) ?? .bottomLeft)
         navigationController?.popViewControllerAnimated(true)
+    }
+
+    @IBAction func changeTriangleColorPressed(sender: AnyObject) {
+        guard let colorPickerViewController = storyboard?.instantiateViewControllerWithIdentifier(ColorPickerViewController.storyboardId) as? ColorPickerViewController else {
+
+            return
+        }
+
+        colorPickerViewController.innitialColor = TriangleView.triangleFillColor
+        colorPickerViewController.isChoosingTriangleColor = true 
+        colorPickerViewController.onChooseColorPressed = {
+            self.triangleColorButton?.backgroundColor = TriangleView.triangleFillColor
+        }
+        navigationController?.pushViewController(colorPickerViewController, animated: true)
+    }
+
+    @IBAction func changeSquareColorPressed(sender: UIButton) {
+        guard let colorPickerViewController = storyboard?.instantiateViewControllerWithIdentifier(ColorPickerViewController.storyboardId) as? ColorPickerViewController else {
+
+            return
+        }
+
+        colorPickerViewController.innitialColor = sender.backgroundColor
+        colorPickerViewController.isChoosingSquareColor = true
+        colorPickerViewController.onChooseColorPressed = {
+            self.squreColorButton?.backgroundColor = TriangleView.squareFillColor
+        }
+        navigationController?.pushViewController(colorPickerViewController, animated: true)
     }
 }

@@ -20,9 +20,15 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var thirdQuarterView: UIView?
     @IBOutlet private weak var fourthQuarterView: UIView?
 
+    var viewScale: CGFloat = 1.0
+
     //MARK: - ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(MainViewController.handlePinch))
+        pinchGesture.delegate = self
+        view.addGestureRecognizer(pinchGesture)
     }
 
     //MARK: - Drawing methods
@@ -51,7 +57,7 @@ class MainViewController: UIViewController {
         let heigth = (sideOfTriangle * sqrt(3.0)) / 2
         let sideOfSquare = (heigth * sideOfTriangle) / (heigth + sideOfTriangle)
         let square = UIView(frame: CGRect(x: triangle.center.x - (sideOfSquare / 2), y: triangle.frame.origin.y + heigth - sideOfSquare, width: sideOfSquare, height: sideOfSquare))
-        square.backgroundColor = UIColor(red: 0.88, green: 0.13, blue: 0.24, alpha: 1.00)
+        square.backgroundColor = TriangleView.squareFillColor
         view.addSubview(square)
     }
 }
@@ -67,9 +73,35 @@ extension MainViewController {
         additionViewController.delegate = self
         navigationController?.pushViewController(additionViewController, animated: true)
     }
+}
 
+//MARK: - Gestures
+extension MainViewController: UIGestureRecognizerDelegate {
     @objc func handleTriangleTap() {
         print("tapped triangle")
+    }
+
+    func handlePinch(pinchGesture: UIPinchGestureRecognizer) {
+        if pinchGesture.state == .Began {
+            viewScale = 1.0
+        }
+
+        let newScale = 1.0 + pinchGesture.scale - viewScale
+//        print(newScale)
+
+//        if newScale < 1.0 {
+//
+//            return
+//        }
+
+        let currentTransform = view.transform
+        let newTransform = CGAffineTransformScale(currentTransform, newScale, newScale)
+        print(view.frame)
+        if view.frame.width < 320 {
+            pinchGesture.enabled = false
+        }
+        view.transform = newTransform
+        viewScale = pinchGesture.scale
     }
 }
 

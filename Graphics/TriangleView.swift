@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 class TriangleView: UIView {
-    static var fillColor: UIColor = UIColor(red: 0.15, green: 0.59, blue: 0.58, alpha: 1.00)
+    static var triangleFillColor: UIColor = UIColor(red: 0.15, green: 0.59, blue: 0.58, alpha: 1.00)
+    static var squareFillColor: UIColor = UIColor(red: 0.88, green: 0.13, blue: 0.24, alpha: 1.00)
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,7 +30,7 @@ class TriangleView: UIView {
         CGContextAddLineToPoint(ctx, CGRectGetMidX(rect), CGRectGetMinY(rect))
         CGContextAddLineToPoint(ctx, (CGRectGetMaxX(rect)), CGRectGetMaxY(rect))
         CGContextClosePath(ctx)
-        CGContextSetFillColorWithColor(ctx, TriangleView.fillColor.CGColor)
+        CGContextSetFillColorWithColor(ctx, TriangleView.triangleFillColor.CGColor)
         CGContextFillPath(ctx)
     }
 }
