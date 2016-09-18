@@ -11,7 +11,6 @@
 		8F815ED51D872F270087D256 /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F815ED41D872F270087D256 /* AdditionViewController.swift */; };
 		8F815EDD1D873D5F0087D256 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F815EDC1D873D5F0087D256 /* UIAlertView+Blocks.m */; };
 		8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1944D1D803249002AACE6 /* AppDelegate.swift */; };
-		8FC194501D803249002AACE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1944F1D803249002AACE6 /* ViewController.swift */; };
 		8FC194531D803249002AACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC194511D803249002AACE6 /* Main.storyboard */; };
 		8FC194551D803249002AACE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC194541D803249002AACE6 /* Assets.xcassets */; };
 		8FC194581D803249002AACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC194561D803249002AACE6 /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		8FCF1F711D881BC200DE579A /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1F701D881BC200DE579A /* UITextField.swift */; };
 		8FCF1F731D896F9000DE579A /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1F721D896F9000DE579A /* Vertex.swift */; };
 		8FF706471D8DBE4500F591CA /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF706461D8DBE4500F591CA /* ColorPickerViewController.swift */; };
+		8FF706491D8EDB8400F591CA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF706481D8EDB8400F591CA /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		8F815EDC1D873D5F0087D256 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		8FC1944A1D803249002AACE6 /* Graphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC1944D1D803249002AACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FC1944F1D803249002AACE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8FC194521D803249002AACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FC194541D803249002AACE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FC194571D803249002AACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		8FCF1F701D881BC200DE579A /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		8FCF1F721D896F9000DE579A /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
 		8FF706461D8DBE4500F591CA /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		8FF706481D8EDB8400F591CA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		923EB28D086E988816EEC35F /* Pods-Graphics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graphics/Pods-Graphics.debug.xcconfig"; sourceTree = "<group>"; };
 		E5848C9ECDB5B02117D7C695 /* Pods-Graphics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graphics.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graphics/Pods-Graphics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +106,7 @@
 			children = (
 				8F815ED41D872F270087D256 /* AdditionViewController.swift */,
 				8FF706461D8DBE4500F591CA /* ColorPickerViewController.swift */,
-				8FC1944F1D803249002AACE6 /* ViewController.swift */,
+				8FF706481D8EDB8400F591CA /* MainViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -386,13 +386,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FC194501D803249002AACE6 /* ViewController.swift in Sources */,
 				8FC1947C1D803701002AACE6 /* TriangleView.swift in Sources */,
 				8F815EDD1D873D5F0087D256 /* UIAlertView+Blocks.m in Sources */,
 				8F815ED51D872F270087D256 /* AdditionViewController.swift in Sources */,
 				8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */,
 				8FCF1F731D896F9000DE579A /* Vertex.swift in Sources */,
 				8FF706471D8DBE4500F591CA /* ColorPickerViewController.swift in Sources */,
+				8FF706491D8EDB8400F591CA /* MainViewController.swift in Sources */,
 				8FCF1F711D881BC200DE579A /* UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
