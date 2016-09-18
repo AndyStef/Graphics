@@ -18,6 +18,8 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var mainView: UIView?
 
+    private var touchedTriangle: TriangleView?
+
     //MARK: - ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +68,7 @@ class MainViewController: UIViewController {
         let square = UIView(frame: CGRect(x: triangle.center.x - (sideOfSquare / 2), y: triangle.frame.origin.y + heigth - sideOfSquare, width: sideOfSquare, height: sideOfSquare))
         square.backgroundColor = TriangleView.squareFillColor
         mainView?.addSubview(square)
+        triangle.square = square
     }
 }
 
@@ -98,8 +101,8 @@ extension MainViewController: AdditionViewControllerDelegate {
         }
 
         mainView?.addSubview(triangle)
-//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainViewController.handleTriangleTap))
-//        triangle.addGestureRecognizer(tapGesture)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainViewController.handleTriangleTap(_:)))
+        triangle.addGestureRecognizer(tapGesture)
         if withInscribedSquare {
             drawSquare(sideLenght * 11, triangle: triangle)
         }
@@ -108,9 +111,45 @@ extension MainViewController: AdditionViewControllerDelegate {
 
 //MARK: - UIScrollViewDelegate
 extension MainViewController: UIScrollViewDelegate {
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    @objc func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return mainView
     }
 }
 
+//MARK: - Gestures 
+extension MainViewController {
+    func handleTriangleTap(tapGesture: UITapGestureRecognizer) {
+        let triangle = tapGesture.view as? TriangleView
 
+        let alertController = UIAlertController(title: "", message: "Що зробити з трикутником?", preferredStyle: .Alert)
+
+        let deleteAction = UIAlertAction(title: "Видалити", style: .Destructive) { (action) in
+            triangle?.removeTriangle()
+        }
+        alertController.addAction(deleteAction)
+
+        let rotateAction = UIAlertAction(title: "Повернути", style: .Default, handler: { (action) in
+            UIView.animateWithDuration(1.5, animations: {
+                let randomAngle = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
+                let rotation = CGAffineTransformRotate((triangle?.transform)!, randomAngle)
+                triangle?.transform = rotation
+                let squareRotation = CGAffineTransformRotate((triangle?.square.transform)!, randomAngle)
+                triangle?.square.transform = squareRotation
+            })
+        })
+        alertController.addAction(rotateAction)
+
+        let roflAction = UIAlertAction(title: "Запускай роботягу", style: .Default) { (action) in
+            UIView.animateWithDuration(0.5, delay: 0, options: [.Repeat], animations: {
+                let rotation = CGAffineTransformRotate((triangle?.transform)!, CGFloat(M_PI))
+                triangle?.transform = rotation
+                }, completion: nil)
+        }
+        alertController.addAction(roflAction)
+
+        let canelAction = UIAlertAction(title: "Нічого", style: .Cancel, handler: nil)
+        alertController.addAction(canelAction)
+
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+}
