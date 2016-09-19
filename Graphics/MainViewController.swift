@@ -9,16 +9,16 @@
 import UIKit
 
 protocol AdditionViewControllerDelegate: class {
-    func createTriangle(x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool, startVertex: VertexType)
+    func createTriangle(_ x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool, startVertex: VertexType)
 }
 
 class MainViewController: UIViewController {
 
     //MARK: - Outlets
-    @IBOutlet private weak var scrollView: UIScrollView!
-    @IBOutlet private weak var mainView: UIView?
+    @IBOutlet fileprivate weak var scrollView: UIScrollView!
+    @IBOutlet fileprivate weak var mainView: UIView?
 
-    private var touchedTriangle: TriangleView?
+    fileprivate var touchedTriangle: TriangleView?
 
     //MARK: - ViewLifeCycle
     override func viewDidLoad() {
@@ -28,20 +28,20 @@ class MainViewController: UIViewController {
         scrollView?.maximumZoomScale = 6.0
     }
 
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
         navigationItem.title = "Назад"
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         navigationItem.title = "Рівносторонні трикутники"
     }
 
     //MARK: - Drawing methods
-    func drawTriangle(x x: CGFloat, y: CGFloat, sideLenght: CGFloat) -> TriangleView {
+    func drawTriangle(x: CGFloat, y: CGFloat, sideLenght: CGFloat) -> TriangleView {
         let height = (sideLenght * sqrt(3.0)) / 2.0
         var triangle = TriangleView()
 
@@ -62,7 +62,7 @@ class MainViewController: UIViewController {
         return triangle
     }
 
-    func drawSquare(sideOfTriangle: CGFloat, triangle: TriangleView) {
+    func drawSquare(_ sideOfTriangle: CGFloat, triangle: TriangleView) {
         let heigth = (sideOfTriangle * sqrt(3.0)) / 2
         let sideOfSquare = (heigth * sideOfTriangle) / (heigth + sideOfTriangle)
         let square = UIView(frame: CGRect(x: triangle.center.x - (sideOfSquare / 2), y: triangle.frame.origin.y + heigth - sideOfSquare, width: sideOfSquare, height: sideOfSquare))
@@ -74,8 +74,8 @@ class MainViewController: UIViewController {
 
 //MARK: - Actions and selectors
 extension MainViewController {
-    @IBAction func addButtonPressed(sender: AnyObject) {
-        guard let additionViewController = storyboard?.instantiateViewControllerWithIdentifier(AdditionViewController.storyboardId) as? AdditionViewController else {
+    @IBAction func addButtonPressed(_ sender: AnyObject) {
+        guard let additionViewController = storyboard?.instantiateViewController(withIdentifier: AdditionViewController.storyboardId) as? AdditionViewController else {
 
             return
         }
@@ -87,7 +87,7 @@ extension MainViewController {
 
 //MARK: - AdditionViewControllerDelegate
 extension MainViewController: AdditionViewControllerDelegate {
-    func createTriangle(x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool, startVertex: VertexType) {
+    func createTriangle(_ x: Double, y: Double, sideLenght: CGFloat, withInscribedSquare: Bool, startVertex: VertexType) {
         var triangle = TriangleView()
         let height = (sideLenght * sqrt(3.0)) / 2.0
 
@@ -111,45 +111,45 @@ extension MainViewController: AdditionViewControllerDelegate {
 
 //MARK: - UIScrollViewDelegate
 extension MainViewController: UIScrollViewDelegate {
-    @objc func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    @objc func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return mainView
     }
 }
 
 //MARK: - Gestures 
 extension MainViewController {
-    func handleTriangleTap(tapGesture: UITapGestureRecognizer) {
+    func handleTriangleTap(_ tapGesture: UITapGestureRecognizer) {
         let triangle = tapGesture.view as? TriangleView
 
-        let alertController = UIAlertController(title: "", message: "Що зробити з трикутником?", preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "", message: "Що зробити з трикутником?", preferredStyle: .alert)
 
-        let deleteAction = UIAlertAction(title: "Видалити", style: .Destructive) { (action) in
+        let deleteAction = UIAlertAction(title: "Видалити", style: .destructive) { (action) in
             triangle?.removeTriangle()
         }
         alertController.addAction(deleteAction)
 
-        let rotateAction = UIAlertAction(title: "Повернути", style: .Default, handler: { (action) in
-            UIView.animateWithDuration(1.5, animations: {
+        let rotateAction = UIAlertAction(title: "Повернути", style: .default, handler: { (action) in
+            UIView.animate(withDuration: 1.5, animations: {
                 let randomAngle = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
-                let rotation = CGAffineTransformRotate((triangle?.transform)!, randomAngle)
+                let rotation = (triangle?.transform)!.rotated(by: randomAngle)
                 triangle?.transform = rotation
-                let squareRotation = CGAffineTransformRotate((triangle?.square.transform)!, randomAngle)
+                let squareRotation = (triangle?.square.transform)!.rotated(by: randomAngle)
                 triangle?.square.transform = squareRotation
             })
         })
         alertController.addAction(rotateAction)
 
-        let roflAction = UIAlertAction(title: "Запускай роботягу", style: .Default) { (action) in
-            UIView.animateWithDuration(0.5, delay: 0, options: [.Repeat], animations: {
-                let rotation = CGAffineTransformRotate((triangle?.transform)!, CGFloat(M_PI))
+        let roflAction = UIAlertAction(title: "Запускай роботягу", style: .default) { (action) in
+            UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat], animations: {
+                let rotation = (triangle?.transform)!.rotated(by: CGFloat(M_PI))
                 triangle?.transform = rotation
                 }, completion: nil)
         }
         alertController.addAction(roflAction)
 
-        let canelAction = UIAlertAction(title: "Нічого", style: .Cancel, handler: nil)
+        let canelAction = UIAlertAction(title: "Нічого", style: .cancel, handler: nil)
         alertController.addAction(canelAction)
 
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
 }
