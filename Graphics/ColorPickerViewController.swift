@@ -12,19 +12,22 @@ import SwiftHSVColorPicker
 class ColorPickerViewController: UIViewController {
     static let storyboardId = "ColorPickerViewController"
 
-    @IBOutlet fileprivate weak var colorPickerView: SwiftHSVColorPicker?
+    @IBOutlet private weak var colorPickerView: SwiftHSVColorPicker?
 
     var onChooseColorPressed: (() -> ())?
-    var innitialColor = UIColor.red
+    var innitialColor = UIColor?()
     var isChoosingTriangleColor = false
     var isChoosingSquareColor = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        colorPickerView?.setViewColor(innitialColor)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Вибрати колір", style: .done, target: self, action: #selector(ColorPickerViewController.chooseColorButtonPressed))
-        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+        if let color = innitialColor {
+            colorPickerView?.setViewColor(color)
+        }
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Вибрати колір", style: .Done, target: self, action: #selector(ColorPickerViewController.chooseColorButtonPressed))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.blackColor()
     }
 }
 
@@ -37,7 +40,7 @@ extension ColorPickerViewController {
             TriangleView.squareFillColor = colorPickerView?.color ?? UIColor()
         }
 
-        navigationController?.popViewController(animated: true)
+        navigationController?.popViewControllerAnimated(true)
         onChooseColorPressed?()
     }
 }

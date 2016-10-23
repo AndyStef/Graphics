@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F40FD651D928D1200E90473 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40FD641D928D1200E90473 /* Int.swift */; };
 		8F7FE38BF261AA98C0706721 /* Pods_Graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A534634817C6CBD41A972C /* Pods_Graphics.framework */; };
 		8F815ED51D872F270087D256 /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F815ED41D872F270087D256 /* AdditionViewController.swift */; };
 		8F815EDD1D873D5F0087D256 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F815EDC1D873D5F0087D256 /* UIAlertView+Blocks.m */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		08A534634817C6CBD41A972C /* Pods_Graphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Graphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F40FD641D928D1200E90473 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		8F815ED41D872F270087D256 /* AdditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionViewController.swift; sourceTree = "<group>"; };
 		8F815EDA1D873D5E0087D256 /* Graphics-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Graphics-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F815EDB1D873D5F0087D256 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8F815EDB1D873D5F0087D256 /* UIAlertView+Blocks.h */,
+				8F40FD641D928D1200E90473 /* Int.swift */,
 				8F815EDC1D873D5F0087D256 /* UIAlertView+Blocks.m */,
 				8FCF1F701D881BC200DE579A /* UITextField.swift */,
 			);
@@ -275,16 +278,13 @@
 					8FC194491D803249002AACE6 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = Q562T6NCPA;
-						LastSwiftMigration = 0800;
 					};
 					8FC1945D1D80324A002AACE6 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
 						TestTargetID = 8FC194491D803249002AACE6;
 					};
 					8FC194681D80324A002AACE6 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
 						TestTargetID = 8FC194491D803249002AACE6;
 					};
 				};
@@ -395,6 +395,7 @@
 				8FC1944E1D803249002AACE6 /* AppDelegate.swift in Sources */,
 				8FCF1F731D896F9000DE579A /* Vertex.swift in Sources */,
 				8FF706471D8DBE4500F591CA /* ColorPickerViewController.swift in Sources */,
+				8F40FD651D928D1200E90473 /* Int.swift in Sources */,
 				8FF706491D8EDB8400F591CA /* MainViewController.swift in Sources */,
 				8FCF1F711D881BC200DE579A /* UITextField.swift in Sources */,
 			);
@@ -552,7 +553,6 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Graphics/Graphics-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -571,7 +571,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Graphics/Graphics-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -583,7 +582,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.GraphicsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphics.app/Graphics";
 			};
 			name = Debug;
@@ -596,7 +594,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.GraphicsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphics.app/Graphics";
 			};
 			name = Release;
@@ -608,7 +605,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.GraphicsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Graphics;
 			};
 			name = Debug;
@@ -620,7 +616,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AS.GraphicsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Graphics;
 			};
 			name = Release;

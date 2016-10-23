@@ -18,22 +18,22 @@ class TriangleView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        self.backgroundColor = UIColor.clear
+        self.backgroundColor = UIColor.clearColor()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
-    override func draw(_ rect: CGRect) {
-        let ctx: CGContext = UIGraphicsGetCurrentContext()!
-        ctx.beginPath()
-        ctx.move(to: CGPoint(x: rect.minX, y: rect.maxY))
-        ctx.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
-        ctx.addLine(to: CGPoint(x: (rect.maxX), y: rect.maxY))
-        ctx.closePath()
-        ctx.setFillColor(TriangleView.triangleFillColor.cgColor)
-        ctx.fillPath()
+    override func drawRect(rect: CGRect) {
+        let ctx: CGContextRef = UIGraphicsGetCurrentContext()!
+        CGContextBeginPath(ctx)
+        CGContextMoveToPoint(ctx, CGRectGetMinX(rect), CGRectGetMaxY(rect))
+        CGContextAddLineToPoint(ctx, CGRectGetMidX(rect), CGRectGetMinY(rect))
+        CGContextAddLineToPoint(ctx, (CGRectGetMaxX(rect)), CGRectGetMaxY(rect))
+        CGContextClosePath(ctx)
+        CGContextSetFillColorWithColor(ctx, TriangleView.triangleFillColor.CGColor)
+        CGContextFillPath(ctx)
     }
 
     func removeTriangle() {
